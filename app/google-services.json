@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "501363199306",
+    "firebase_url": "https://savourit-teame-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "savourit-teame",
+    "storage_bucket": "savourit-teame.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:501363199306:android:1475107e8326c6fbafc5b3",
+        "android_client_info": {
+          "package_name": "com.example.loginsignuprealtime"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIkt4TRNF1Rvubzqm8s7iI7dYKsx7KvHM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:501363199306:android:decc75db9e1bf6dcafc5b3",
+        "android_client_info": {
+          "package_name": "com.example.savour_it"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIkt4TRNF1Rvubzqm8s7iI7dYKsx7KvHM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:501363199306:android:4bd03214b24b28eaafc5b3",
+        "android_client_info": {
+          "package_name": "com.example.savourit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIkt4TRNF1Rvubzqm8s7iI7dYKsx7KvHM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
