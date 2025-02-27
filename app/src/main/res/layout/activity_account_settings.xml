@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    tools:context=".AccountSettingsActivity"
+    android:paddingTop="32dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/account_settings_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/account_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Account Settings"
+            android:textSize="24sp"
+            android:padding="16dp"
+            android:gravity="center"
+            android:textColor="#333333"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/username_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username: "
+        android:textSize="18sp"
+        android:textColor="#555555"
+        app:layout_constraintTop_toBottomOf="@id/account_settings_card"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:textSize="18sp"
+        android:textColor="#555555"
+        app:layout_constraintTop_toBottomOf="@id/username_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/password_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password: ••••••••"
+        android:textSize="18sp"
+        android:textColor="#555555"
+        app:layout_constraintTop_toBottomOf="@id/email_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/password_label"
+        android:layout_marginTop="24dp"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/change_payment_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Payment Method"
+            android:backgroundTint="#1E88E5"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            app:cornerRadius="16dp"/>
+
+        <Button
+            android:id="@+id/back_to_settings_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Back"
+            android:backgroundTint="#1E88E5"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            app:cornerRadius="16dp"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
