@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,37 +8,52 @@
     android:layout_height="match_parent"
     tools:context=".FriendDetailsActivity">
 
+    <!-- Friend's Username -->
     <TextView
         android:id="@+id/txtFriendUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Username"
         android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="30dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:padding="16dp"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Friend's Email -->
     <TextView
         android:id="@+id/txtFriendEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Email"
         android:textSize="18sp"
+        android:padding="16dp"
         app:layout_constraintTop_toBottomOf="@id/txtFriendUsername"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:padding="16dp"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Friend's Account Type -->
     <TextView
-        android:id="@+id/txtFriendAccount"
+        android:id="@+id/txtFriendStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Account Type"
+        android:text="Status"
         android:textSize="18sp"
+        android:padding="16dp"
         app:layout_constraintTop_toBottomOf="@id/txtFriendEmail"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:padding="16dp"/>
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/txtFriendStatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

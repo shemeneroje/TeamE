@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -13,9 +14,22 @@
         android:textSize="24sp"
         android:paddingBottom="20dp"/>
 
-    <Button
+    <!-- Small Friends Page Icon Button -->
+    <ImageButton
         android:id="@+id/btnFriends"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_friends"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:contentDescription="Friends Page"
+    android:visibility="gone"
+    android:padding="8dp"/>
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go to Friends Page"/>
+        android:text="Log Out"
+        android:layout_marginTop="20dp"/>
 </LinearLayout>

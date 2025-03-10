@@ -14,14 +14,16 @@
         android:layout_width="243dp"
         android:layout_height="431dp"
         android:layout_marginTop="10dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:padding="24dp"/>
 
 
+    <!-- Back Button -->
     <Button
-        android:id="@+id/btnLogout"
+        android:id="@+id/btnBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Log Out" />
+        android:text="Back to Main Page" />
 
     <EditText
         android:id="@+id/edtFriendUsername"

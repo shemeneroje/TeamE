@@ -1,7 +1,12 @@
 <resources>
     <string name="app_name">SavourIT</string>
+    <string name="hint_username">Enter your username</string>
     <string name="hint_email">Enter your email</string>
     <string name="hint_password">Enter your password</string>
+    <string name="btn_signup">Sign Up</string>
     <string name="btn_login">Login</string>
-    <string name="btn_signup">Sign Up Instead</string>
+    <string name="btn_go_to_login">Already have an account? Log in</string>
+    <string name="chat_with">Chat with %s</string>
+    <string name="error_invalid_user">Invalid user. Please try again.</string>
+    <string name="error_sending_message">Failed to send message. Try again.</string>
 </resources>
