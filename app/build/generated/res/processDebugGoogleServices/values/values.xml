@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firebase_database_url" translatable="false">https://savourit-teame-default-rtdb.europe-west1.firebasedatabase.app</string>
+    <string name="gcm_defaultSenderId" translatable="false">501363199306</string>
+    <string name="google_api_key" translatable="false">AIzaSyAIkt4TRNF1Rvubzqm8s7iI7dYKsx7KvHM</string>
+    <string name="google_app_id" translatable="false">1:501363199306:android:4bd03214b24b28eaafc5b3</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAIkt4TRNF1Rvubzqm8s7iI7dYKsx7KvHM</string>
+    <string name="google_storage_bucket" translatable="false">savourit-teame.firebasestorage.app</string>
+    <string name="project_id" translatable="false">savourit-teame</string>
+</resources>
