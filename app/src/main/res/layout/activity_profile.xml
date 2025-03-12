@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context=".ProfileActivity">
+
+    <!-- Profile Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/lavender"/>
+    </LinearLayout>
+
+    <!-- Card for User Information -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center"
+            android:background="@drawable/custom_edittext">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Information"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/lavender" />
+
+            <!-- Username -->
+            <TextView
+                android:id="@+id/usernameTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="15dp"
+                android:paddingStart="40dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:drawablePadding="8dp"/>
+
+            <!-- First Name -->
+            <TextView
+                android:id="@+id/firstNameTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="15dp"
+                android:paddingStart="40dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"/>
+
+            <!-- Last Name -->
+            <TextView
+                android:id="@+id/lastNameTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="15dp"
+                android:paddingStart="40dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"/>
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/emailAddressTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="15dp"
+                android:paddingStart="40dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/baseline_email_24"
+                android:drawablePadding="8dp"/>
+
+            <!-- Upgrade Plan Button -->
+            <Button
+                android:id="@+id/upgrade_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Upgrade Plan"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/lavender"/> <!-- Change to lavender -->
+
+            <!-- Reset Password Button -->
+            <Button
+                android:id="@+id/reset_password_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Reset Password"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/lavender"/>
+
+            <!-- Logout Button -->
+            <Button
+                android:id="@+id/logout_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Logout"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/black" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+
+
+
+
