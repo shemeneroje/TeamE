@@ -45,14 +45,14 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder
         return messages.size();
     }
 
-    // ✅ New method to update messages dynamically
+    //New method to update messages dynamically
     public void updateMessages(List<String> newMessages) {
         messages.clear();
         messages.addAll(newMessages);
         notifyDataSetChanged(); // Notify adapter of data change
     }
 
-    // ✅ New method to add a single new message
+    //New method to add a single new message
     public void addMessage(String message) {
         messages.add(message);
         notifyItemInserted(messages.size() - 1);
