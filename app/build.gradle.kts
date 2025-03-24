@@ -84,6 +84,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.play.services.measurement.api)
     implementation(libs.androidx.navigation.runtime)
+    implementation(libs.androidx.tools.core)
 
     // Testing dependencies
     testImplementation(libs.junit)

@@ -4,7 +4,7 @@
             "outputFile": "com.example.savourit.app-mergeDebugResources-78:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/shemeneroje/.gradle/caches/8.10.2/transforms/b61f7043d78d68b4f1fd223efa9eabcd/transformed/material-1.12.0/res/values-v23/values-v23.xml",
+                    "source": "/Users/shemeneroje/.gradle/caches/8.10.2/transforms/7ab9686624ff97fd3c792ba4053db20b/transformed/material-1.12.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,5,9,13,16,19,22,25,28,32",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/shemeneroje/.gradle/caches/8.10.2/transforms/c25b6b3eda2c03b3321ba896caf4f224/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
+                    "source": "/Users/shemeneroje/.gradle/caches/8.10.2/transforms/de1be0567ffa1ab2518d162a813f9c76/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -42,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "/Users/shemeneroje/.gradle/caches/8.10.2/transforms/5b5e5d377045e30a77a3c641a281cf5f/transformed/appcompat-1.7.0/res/values-v23/values-v23.xml",
+                    "source": "/Users/shemeneroje/.gradle/caches/8.10.2/transforms/8d5fa73ed6c78529eddf86e11f9360b7/transformed/appcompat-1.7.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
