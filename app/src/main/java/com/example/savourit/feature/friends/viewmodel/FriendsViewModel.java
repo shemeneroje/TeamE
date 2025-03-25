@@ -45,31 +45,25 @@ public class FriendsViewModel extends ViewModel {
                         }
                         fetchFriendUsernames(friendsToLoad);
                     });
-
-            db.collection("friends").whereEqualTo("userID2", userId).get()
-                    .addOnSuccessListener(querySnapshot -> {
-                        for (QueryDocumentSnapshot document : querySnapshot) {
-                            String friendId = document.getString("userID1");
-                            if (friendId != null) friendsToLoad.add(friendId);
-                        }
-                        fetchFriendUsernames(friendsToLoad);
-                    });
         });
     }
 
     private void fetchFriendUsernames(List<String> friendIds) {
-        List<Friend> updatedList = new ArrayList<>(friendsList.getValue());
+        List<Friend> updatedList = new ArrayList<>();
 
         for (String friendId : friendIds) {
             db.collection("users").document(friendId).get()
                     .addOnSuccessListener(documentSnapshot -> {
                         String username = documentSnapshot.getString("username");
+                        String accountType = documentSnapshot.getString("accountType"); // Fetch account type
+                        String email = documentSnapshot.getString("email"); // Fetch email
+
                         if (username != null) {
-                            updatedList.add(new Friend(friendId, username));
+                            updatedList.add(new Friend(friendId, username, accountType, email));
                             friendsList.postValue(updatedList);
                         }
                     })
-                    .addOnFailureListener(e -> Log.e("FriendsViewModel", "Error fetching friend's username", e));
+                    .addOnFailureListener(e -> Log.e("FriendsViewModel", "Error fetching friend's details", e));
         }
     }
 
@@ -131,22 +125,6 @@ public class FriendsViewModel extends ViewModel {
                         Log.d("FriendsViewModel", "Friend removed");
                         loadFriends();
                     });
-        });
-    }
-
-    // ✅ NEW: Function to create chat room ID and navigate
-    public String getChatRoomId(Friend friend) {
-        String currentUserId = FirebaseAuth.getInstance().getUid();
-        if (currentUserId == null) return null;
-
-        return currentUserId.compareTo(friend.getUserId()) < 0 ?
-                currentUserId + "_" + friend.getUserId() :
-                friend.getUserId() + "_" + currentUserId;
-    }
-    public void logoutUser(Activity activity) {
-        executorService.execute(() -> {
-            auth.signOut();
-            activity.runOnUiThread(activity::finish);
         });
     }
     @Override

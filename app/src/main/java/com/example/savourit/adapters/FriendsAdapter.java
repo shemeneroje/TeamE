@@ -55,8 +55,12 @@ public class FriendsAdapter extends RecyclerView.Adapter<FriendsAdapter.FriendVi
         Friend friend = friendsList.get(position);
         holder.usernameTextView.setText(friend.getUsername());
 
-        //Click (for view, delete, chat)
-        holder.usernameTextView.setOnClickListener(view -> onFriendClickListener.onFriendClick(friend));
+        //Click (for chat, view, delete)
+        holder.usernameTextView.setOnClickListener(view -> {
+            if (onFriendClickListener != null) {
+                onFriendClickListener.onFriendClick(friend);
+            }
+        });
 
         // Long Click (Right-click equivalent) - Now handled safely
         holder.usernameTextView.setOnLongClickListener(view -> {
@@ -64,6 +68,13 @@ public class FriendsAdapter extends RecyclerView.Adapter<FriendsAdapter.FriendVi
             return true;  // Consume the event to prevent extra clicks
         });
     }
+
+    public void updateList(List<Friend> newList) {
+        this.friendsList.clear();
+        this.friendsList.addAll(newList);
+        notifyDataSetChanged();
+    }
+
 
     @Override
     public int getItemCount() {

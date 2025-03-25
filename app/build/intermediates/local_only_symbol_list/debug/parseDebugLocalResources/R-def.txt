@@ -32,6 +32,7 @@ drawable custom_button
 drawable custom_circle
 drawable custom_edittext
 drawable dialog_bg
+drawable edit_text_background
 drawable editable_bg
 drawable gradient_button
 drawable hide_pass
@@ -77,7 +78,6 @@ id back_button
 id btnAddFriend
 id btnBack
 id btnEmoji
-id btnLogout
 id btnSend
 id buttonSignUp
 id card_number_edit_text
@@ -100,6 +100,7 @@ id editTextPassword
 id editTextUname
 id edtFriendUsername
 id edtMessage
+id edtSearch
 id emailAddressTitle
 id email_input
 id email_layout
@@ -113,6 +114,7 @@ id forgot_title
 id friends_to_chat
 id friends_to_friends_detail
 id home_to_friends
+id inputContainer
 id lastNameTitle
 id listView
 id login_button_container
@@ -137,6 +139,7 @@ id password_layout
 id profile_image
 id progress_bar
 id recyclerChat
+id recyclerFriendReviews
 id recyclerFriends
 id reset_button
 id reset_password_button
@@ -152,10 +155,16 @@ id tv_do_not_have_account
 id tv_email_error
 id tv_password_error
 id txtChatTitle
+id txtComment
 id txtFriendAccountType
 id txtFriendEmail
+id txtFriendReviewsTitle
 id txtFriendUsername
+id txtFriendsTitle
+id txtLiked
 id txtMessage
+id txtRating
+id txtRestaurantName
 id txtUsername
 id upgrade_button
 id upgrade_plus_button
@@ -180,6 +189,7 @@ layout fragment_home
 layout fragment_settings
 layout item_friend
 layout item_message
+layout item_review
 layout nav_header
 layout popup_filter_menu
 menu drawer_menu
@@ -187,6 +197,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav
 string app_name
+string chat_message_format
 string chat_with
 string do_not_have_account
 string email
@@ -206,6 +217,7 @@ string nav_open
 string password
 string please_sign_in_to_continue
 string project_id
+string rating_format
 string welcome_to_savour_it_v_0_0_1
 style CustomToolbarTheme
 style DrawerArrowToggleStyle

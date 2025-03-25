@@ -3531,6 +3531,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable dialog_bg
+drawable edit_text_background
 drawable editable_bg
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
@@ -3791,7 +3792,6 @@ id browser_actions_menu_view
 id btnAddFriend
 id btnBack
 id btnEmoji
-id btnLogout
 id btnSend
 id buttonPanel
 id buttonSignUp
@@ -3893,6 +3893,7 @@ id edit_query
 id edit_text_id
 id edtFriendUsername
 id edtMessage
+id edtSearch
 id elastic
 id emailAddressTitle
 id email_input
@@ -3962,6 +3963,7 @@ id immediateStop
 id included
 id indeterminate
 id info
+id inputContainer
 id inspection_slot_table_set
 id invisible
 id inward
@@ -4148,6 +4150,7 @@ id radio
 id ratio
 id rectangles
 id recyclerChat
+id recyclerFriendReviews
 id recyclerFriends
 id report_drawn
 id reset_button
@@ -4287,10 +4290,16 @@ id tv_do_not_have_account
 id tv_email_error
 id tv_password_error
 id txtChatTitle
+id txtComment
 id txtFriendAccountType
 id txtFriendEmail
+id txtFriendReviewsTitle
 id txtFriendUsername
+id txtFriendsTitle
+id txtLiked
 id txtMessage
+id txtRating
+id txtRestaurantName
 id txtUsername
 id unchecked
 id uniform
@@ -4477,6 +4486,7 @@ layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_friend
 layout item_message
+layout item_review
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -4603,6 +4613,7 @@ string call_notification_screening_text
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
+string chat_message_format
 string chat_with
 string clear_text_end_icon_content_description
 string close_drawer
@@ -4838,6 +4849,7 @@ string please_sign_in_to_continue
 string project_id
 string range_end
 string range_start
+string rating_format
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description

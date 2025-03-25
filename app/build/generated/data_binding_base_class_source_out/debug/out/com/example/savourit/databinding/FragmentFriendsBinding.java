@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -25,22 +27,31 @@ public final class FragmentFriendsBinding implements ViewBinding {
   public final Button btnAddFriend;
 
   @NonNull
-  public final Button btnLogout;
+  public final EditText edtFriendUsername;
 
   @NonNull
-  public final EditText edtFriendUsername;
+  public final EditText edtSearch;
+
+  @NonNull
+  public final LinearLayout inputContainer;
 
   @NonNull
   public final RecyclerView recyclerFriends;
 
+  @NonNull
+  public final TextView txtFriendsTitle;
+
   private FragmentFriendsBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnAddFriend,
-      @NonNull Button btnLogout, @NonNull EditText edtFriendUsername,
-      @NonNull RecyclerView recyclerFriends) {
+      @NonNull EditText edtFriendUsername, @NonNull EditText edtSearch,
+      @NonNull LinearLayout inputContainer, @NonNull RecyclerView recyclerFriends,
+      @NonNull TextView txtFriendsTitle) {
     this.rootView = rootView;
     this.btnAddFriend = btnAddFriend;
-    this.btnLogout = btnLogout;
     this.edtFriendUsername = edtFriendUsername;
+    this.edtSearch = edtSearch;
+    this.inputContainer = inputContainer;
     this.recyclerFriends = recyclerFriends;
+    this.txtFriendsTitle = txtFriendsTitle;
   }
 
   @Override
@@ -76,15 +87,21 @@ public final class FragmentFriendsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btnLogout;
-      Button btnLogout = ViewBindings.findChildViewById(rootView, id);
-      if (btnLogout == null) {
-        break missingId;
-      }
-
       id = R.id.edtFriendUsername;
       EditText edtFriendUsername = ViewBindings.findChildViewById(rootView, id);
       if (edtFriendUsername == null) {
+        break missingId;
+      }
+
+      id = R.id.edtSearch;
+      EditText edtSearch = ViewBindings.findChildViewById(rootView, id);
+      if (edtSearch == null) {
+        break missingId;
+      }
+
+      id = R.id.inputContainer;
+      LinearLayout inputContainer = ViewBindings.findChildViewById(rootView, id);
+      if (inputContainer == null) {
         break missingId;
       }
 
@@ -94,8 +111,14 @@ public final class FragmentFriendsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentFriendsBinding((ConstraintLayout) rootView, btnAddFriend, btnLogout,
-          edtFriendUsername, recyclerFriends);
+      id = R.id.txtFriendsTitle;
+      TextView txtFriendsTitle = ViewBindings.findChildViewById(rootView, id);
+      if (txtFriendsTitle == null) {
+        break missingId;
+      }
+
+      return new FragmentFriendsBinding((ConstraintLayout) rootView, btnAddFriend,
+          edtFriendUsername, edtSearch, inputContainer, recyclerFriends, txtFriendsTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

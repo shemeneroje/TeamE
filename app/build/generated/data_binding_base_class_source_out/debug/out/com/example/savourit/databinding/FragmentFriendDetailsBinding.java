@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.savourit.R;
@@ -27,22 +28,31 @@ public final class FragmentFriendDetailsBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
+  public final RecyclerView recyclerFriendReviews;
+
+  @NonNull
   public final TextView txtFriendAccountType;
 
   @NonNull
   public final TextView txtFriendEmail;
 
   @NonNull
+  public final TextView txtFriendReviewsTitle;
+
+  @NonNull
   public final TextView txtFriendUsername;
 
   private FragmentFriendDetailsBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnBack,
-      @NonNull ConstraintLayout main, @NonNull TextView txtFriendAccountType,
-      @NonNull TextView txtFriendEmail, @NonNull TextView txtFriendUsername) {
+      @NonNull ConstraintLayout main, @NonNull RecyclerView recyclerFriendReviews,
+      @NonNull TextView txtFriendAccountType, @NonNull TextView txtFriendEmail,
+      @NonNull TextView txtFriendReviewsTitle, @NonNull TextView txtFriendUsername) {
     this.rootView = rootView;
     this.btnBack = btnBack;
     this.main = main;
+    this.recyclerFriendReviews = recyclerFriendReviews;
     this.txtFriendAccountType = txtFriendAccountType;
     this.txtFriendEmail = txtFriendEmail;
+    this.txtFriendReviewsTitle = txtFriendReviewsTitle;
     this.txtFriendUsername = txtFriendUsername;
   }
 
@@ -81,6 +91,12 @@ public final class FragmentFriendDetailsBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
+      id = R.id.recyclerFriendReviews;
+      RecyclerView recyclerFriendReviews = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerFriendReviews == null) {
+        break missingId;
+      }
+
       id = R.id.txtFriendAccountType;
       TextView txtFriendAccountType = ViewBindings.findChildViewById(rootView, id);
       if (txtFriendAccountType == null) {
@@ -93,6 +109,12 @@ public final class FragmentFriendDetailsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.txtFriendReviewsTitle;
+      TextView txtFriendReviewsTitle = ViewBindings.findChildViewById(rootView, id);
+      if (txtFriendReviewsTitle == null) {
+        break missingId;
+      }
+
       id = R.id.txtFriendUsername;
       TextView txtFriendUsername = ViewBindings.findChildViewById(rootView, id);
       if (txtFriendUsername == null) {
@@ -100,7 +122,8 @@ public final class FragmentFriendDetailsBinding implements ViewBinding {
       }
 
       return new FragmentFriendDetailsBinding((ConstraintLayout) rootView, btnBack, main,
-          txtFriendAccountType, txtFriendEmail, txtFriendUsername);
+          recyclerFriendReviews, txtFriendAccountType, txtFriendEmail, txtFriendReviewsTitle,
+          txtFriendUsername);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

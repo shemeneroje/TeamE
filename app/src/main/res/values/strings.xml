@@ -21,5 +21,8 @@
     <string name="password">Password</string>
     <string name="please_sign_in_to_continue">Please sign in to continue.</string>
     <string name="welcome_to_savour_it_v_0_0_1">Welcome to Savour-It - V 0.0.1</string>
+    <string name="rating_format">Rating: %1$.1f</string>
+    <string name="chat_message_format">%1$s: %2$s</string>
+
 </resources>
 
