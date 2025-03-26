@@ -5,6 +5,7 @@ public class User {
     private String firstName;
     private String lastName;
     private String email;
+    private String accountType; //edit
 
     public User() {
     }
@@ -14,6 +15,7 @@ public class User {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.accountType = "Free"; //edit
     }
 
     // Getters
@@ -48,6 +50,15 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    //edit
+    public String getAccountType() {
+        return accountType;
+    }
+
+    public void setAccountType(String accountType) {
+        this.accountType = accountType;
     }
 }
 
