@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Savour It</string>
+    <string name="nav_open">Abrir el menú de navegación</string>
+    <string name="nav_close">Cerrar el menú de navegación</string>
+    <string name="image">Imagen</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="email">Correo electrónico</string>
+    <string name="nav_home">Inicio</string>
+    <string name="nav_friends">Amigos</string>
+    <string name="nav_settings">Configuración</string>
+    <string name="nav_logout">Cerrar sesión</string>
+    <string name="enable_notifications">Activar notificaciones</string>
+    <string name="enable_dark_mode">Modo oscuro</string>
+    <string name="enable_auto_update">Activar actualización automática</string>
+    <string name="log_out_button">CERRAR SESIÓN</string>
+    <string name="add_friend">AGREGAR AMIGO</string>
+    <string name="enter_friend_username">Ingresa el nombre de usuario del amigo</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_friends">Amigos</string>
+    <string name="title_settings">Configuración</string>
+    <string name="title_chat">Chat</string>
+    <string name="selected_cuisine">Seleccionado: %1$s</string>
+    <string-array name="cuisine_array">
+        <item>Todas las cocinas</item>
+        <item>Italiana</item>
+        <item>China</item>
+        <item>India</item>
+        <item>Mexicana</item>
+        <item>Francesa</item>
+    </string-array>
+    <string name="filter_icon">Icono de filtro</string>
+    <string name="chat_with">Chatear con %s</string>
+    <string name="error_invalid_user">Usuario inválido. Inténtalo de nuevo.</string>
+    <string name="error_sending_message">No se pudo enviar el mensaje. Inténtalo de nuevo.</string>
+    <string name="do_not_have_account">¿Aún no tienes una cuenta? Regístrate</string>
+    <string name="password">Contraseña</string>
+    <string name="please_sign_in_to_continue">Inicia sesión para continuar.</string>
+    <string name="welcome_to_savour_it_v_0_0_1">Bienvenido a Savour-It - Versión 0.0.1</string>
+    <string name="change_language">Cambiar idioma</string>
+    <string-array name="language_array">
+        <item>English</item>
+        <item>Polski</item>
+        <item>Español</item>
+    </string-array>
+</resources>

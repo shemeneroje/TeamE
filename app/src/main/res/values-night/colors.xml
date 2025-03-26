@@ -1,0 +1,14 @@
+<resources>
+    <color name="colorBackground">#000000</color>
+    <color name="colorOnBackground">#FFFFFF</color>
+
+    <color name="colorPrimary">#FFA726</color>
+    <color name="colorPrimaryVariant">#FB8C00</color>
+    <color name="colorOnPrimary">#000000</color>
+
+    <color name="textColor">#FFFFFF</color>
+
+    <color name="background_color">#121212</color>
+    <color name="colorNormalTextColor">#CCCCCC</color>
+    <color name="colorHintTextColor">#888888</color>
+</resources>

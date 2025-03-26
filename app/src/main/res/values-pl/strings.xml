@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Savour It</string>
+    <string name="nav_open">Otwórz menu nawigacji</string>
+    <string name="nav_close">Zamknij menu nawigacji</string>
+    <string name="image">Obraz</string>
+    <string name="login">Zaloguj się</string>
+    <string name="email">Email</string>
+    <string name="nav_home">Strona główna</string>
+    <string name="nav_friends">Znajomi</string>
+    <string name="nav_settings">Ustawienia</string>
+    <string name="nav_logout">Wyloguj</string>
+    <string name="enable_notifications">Włącz powiadomienia</string>
+    <string name="enable_dark_mode">Tryb ciemny</string>
+    <string name="enable_auto_update">Włącz automatyczne aktualizacje</string>
+    <string name="log_out_button">WYLOGUJ SIĘ</string>
+    <string name="add_friend">DODAJ ZNAJOMEGO</string>
+    <string name="enter_friend_username">Wpisz nazwę użytkownika</string>
+    <string name="title_home">Strona główna</string>
+    <string name="title_friends">Znajomi</string>
+    <string name="title_settings">Ustawienia</string>
+    <string name="title_chat">Czat</string>
+    <string name="selected_cuisine">Wybrano: %1$s</string>
+    <string-array name="cuisine_array">
+        <item>Wszystkie kuchnie</item>
+        <item>Włoska</item>
+        <item>Chińska</item>
+        <item>Indyjska</item>
+        <item>Meksykańska</item>
+        <item>Francuska</item>
+    </string-array>
+    <string name="filter_icon">Ikona filtru</string>
+    <string name="chat_with">Czat z %s</string>
+    <string name="error_invalid_user">Nieprawidłowy użytkownik. Spróbuj ponownie</string>
+    <string name="error_sending_message">Nie udało się wysłać wiadomości. Spróbuj ponownie.</string>
+    <string name="do_not_have_account">Nie masz jeszcze konta? Zarejestruj się.</string>
+    <string name="password">Hasło</string>
+    <string name="please_sign_in_to_continue">Zaloguj się, aby kontynuować.</string>
+    <string name="welcome_to_savour_it_v_0_0_1">Witamy w Savour-It - Wersja 0.0.1</string>
+    <string name="change_language">Zmień język</string>
+    <string-array name="language_array">
+        <item>English</item>
+        <item>Polski</item>
+        <item>Español</item>
+    </string-array>
+
+</resources>
+
