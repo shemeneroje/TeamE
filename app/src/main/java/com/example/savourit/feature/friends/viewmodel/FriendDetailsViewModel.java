@@ -1,20 +1,18 @@
 package com.example.savourit.feature.friends.viewmodel;
 
 import android.util.Log;
-
+import com.example.savourit.models.Friend;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
-
-import com.example.savourit.models.FriendsDetail;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class FriendDetailsViewModel extends ViewModel {
 
-    private final MutableLiveData<FriendsDetail> friendDetails = new MutableLiveData<>();
+    private final MutableLiveData<Friend> friendDetails = new MutableLiveData<>();
     private final FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-    public LiveData<FriendsDetail> getFriendDetails() {
+    public LiveData<Friend> getFriendDetails() {
         return friendDetails;
     }
 
@@ -27,8 +25,12 @@ public class FriendDetailsViewModel extends ViewModel {
         db.collection("users").document(friendId).get()
                 .addOnSuccessListener(documentSnapshot -> {
                     if (documentSnapshot.exists()) {
-                        FriendsDetail friend = documentSnapshot.toObject(FriendsDetail.class);
-                        friendDetails.setValue(friend);
+                        Friend friend = documentSnapshot.toObject(Friend.class);
+                        if (friend != null) {
+                            friend.setUserId(documentSnapshot.getId()); //set userId from doc ID
+                            friendDetails.postValue(friend);
+                        }
+
                     } else {
                         Log.e("FriendDetailsVM", "Friend not found");
                     }

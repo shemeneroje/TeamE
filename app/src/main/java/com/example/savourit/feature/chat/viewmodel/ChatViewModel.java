@@ -1,5 +1,7 @@
 package com.example.savourit.feature.chat.viewmodel;
 
+import android.util.Log;
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
@@ -17,9 +19,12 @@ public class ChatViewModel extends ViewModel {
     private final FirebaseFirestore db;
     private final String currentUserId;
     private String chatRoomId;
-    private final MutableLiveData<List<String>> messages;
+    private final MutableLiveData<List<MessageModel>> messages;
+
     private final MutableLiveData<String> friendName;
     private final ExecutorService executorService;
+    private String currentUsername;
+
 
     public ChatViewModel() {
         db = FirebaseFirestore.getInstance();
@@ -27,9 +32,16 @@ public class ChatViewModel extends ViewModel {
         messages = new MutableLiveData<>(new ArrayList<>());
         friendName = new MutableLiveData<>();
         executorService = Executors.newSingleThreadExecutor();
+
+        if (currentUserId != null) {
+            db.collection("users").document(currentUserId).get()
+                    .addOnSuccessListener(doc -> {
+                        currentUsername = doc.getString("username");
+                    });
+        }
     }
 
-    public LiveData<List<String>> getMessages() {
+    public LiveData<List<MessageModel>> getMessages() {
         return messages;
     }
 
@@ -54,25 +66,37 @@ public class ChatViewModel extends ViewModel {
             chatRef.orderBy("timestamp", Query.Direction.ASCENDING)
                     .addSnapshotListener((querySnapshot, e) -> {
                         if (querySnapshot != null) {
-                            List<String> newMessages = new ArrayList<>();
+                            List<MessageModel> newMessages = new ArrayList<>();
                             for (QueryDocumentSnapshot document : querySnapshot) {
-                                newMessages.add(document.getString("text"));
+                                MessageModel message = document.toObject(MessageModel.class);
+                                newMessages.add(message);
                             }
                             messages.postValue(newMessages);
+
                         }
                     });
         });
     }
 
-    public void sendMessage(String message) {
-        if (chatRoomId == null) return;
+    public void sendMessage(String text) {
+        if (chatRoomId == null || currentUserId == null) return;
 
-        // Store message in Firestore on a background thread
-        executorService.execute(() -> {
-            db.collection("chats").document(chatRoomId).collection("messages")
-                    .add(new MessageModel(message, System.currentTimeMillis()));
-        });
+        if (currentUsername == null) {
+            currentUsername = "You";
+        }
+
+
+        MessageModel message = new MessageModel(currentUserId, currentUsername, text, System.currentTimeMillis());
+        db.collection("chats").document(chatRoomId).collection("messages")
+                .add(message)
+                .addOnSuccessListener(docRef -> {
+                    Log.d("ChatViewModel", "Message sent!");
+                })
+                .addOnFailureListener(e -> {
+                    Log.e("ChatViewModel", "Failed to send message: " + e.getMessage());
+                });
     }
+
 
     @Override
     protected void onCleared() {
