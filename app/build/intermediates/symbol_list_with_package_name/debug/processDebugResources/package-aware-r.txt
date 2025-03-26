@@ -2565,6 +2565,7 @@ color quantum_yellowA100
 color quantum_yellowA200
 color quantum_yellowA400
 color quantum_yellowA700
+color red
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -3487,6 +3488,8 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable amu_bubble_mask
+drawable amu_bubble_shadow
 drawable arrow_fwd
 drawable avd_hide_password
 drawable avd_show_password
@@ -3753,6 +3756,7 @@ id aligned
 id all
 id allStates
 id always
+id amu_text
 id androidx_compose_ui_view_composition_context
 id androidx_window_activity_scope
 id animateToEnd
@@ -3777,6 +3781,7 @@ id beginOnFirstDraw
 id beginning
 id below
 id bestChoice
+id bikeOption
 id blocking
 id bottom
 id bounce
@@ -3793,6 +3798,7 @@ id btnBack
 id btnEmoji
 id btnLogout
 id btnSend
+id btnStopNavigation
 id buttonPanel
 id buttonSignUp
 id cache_measures
@@ -3878,6 +3884,7 @@ id dragRight
 id dragStart
 id dragUp
 id drawer_layout
+id driveOption
 id dropdown_menu
 id easeIn
 id easeInOut
@@ -4272,6 +4279,7 @@ id toolbar
 id top
 id topPanel
 id touch_outside
+id transitOption
 id transitionToEnd
 id transitionToStart
 id transition_clip
@@ -4313,8 +4321,11 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id walkOption
+id webview
 id west
 id wide
+id window
 id withText
 id with_icon
 id withinBounds
@@ -4449,6 +4460,9 @@ layout activity_payment
 layout activity_profile
 layout activity_sign_up
 layout activity_upgrade_plan
+layout amu_info_window
+layout amu_text_bubble
+layout amu_webview
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -4544,6 +4558,7 @@ layout places_autocomplete_impl_powered_by_google
 layout places_autocomplete_impl_search_bar
 layout places_autocomplete_prediction
 layout popup_filter_menu
+layout popup_transport_mode
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -5997,6 +6012,9 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style amu_Bubble_TextAppearance_Dark
+style amu_Bubble_TextAppearance_Light
+style amu_ClusterIcon_TextAppearance
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

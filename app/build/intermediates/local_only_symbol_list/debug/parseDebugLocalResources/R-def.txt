@@ -15,6 +15,7 @@ color orange
 color purple_200
 color purple_500
 color purple_700
+color red
 color teal_200
 color teal_700
 color white
@@ -74,11 +75,13 @@ id auto_update_container
 id auto_update_label
 id autocomplete_fragment
 id back_button
+id bikeOption
 id btnAddFriend
 id btnBack
 id btnEmoji
 id btnLogout
 id btnSend
+id btnStopNavigation
 id buttonSignUp
 id card_number_edit_text
 id change_language_button
@@ -93,6 +96,7 @@ id divider1
 id divider2
 id divider3
 id drawer_layout
+id driveOption
 id editTextEmail
 id editTextFName
 id editTextLName
@@ -148,6 +152,7 @@ id switch_dark_mode
 id switch_notifications
 id textViewLogin
 id toolbar
+id transitOption
 id tv_do_not_have_account
 id tv_email_error
 id tv_password_error
@@ -163,6 +168,7 @@ id upgrade_premium_button
 id user_email
 id user_name
 id usernameTitle
+id walkOption
 layout activity_base
 layout activity_forgot_password
 layout activity_login
@@ -182,6 +188,7 @@ layout item_friend
 layout item_message
 layout nav_header
 layout popup_filter_menu
+layout popup_transport_mode
 menu drawer_menu
 mipmap ic_launcher
 mipmap ic_launcher_round

@@ -14,6 +14,7 @@
     <color name="colorTextColor">#434343</color>
     <color name="colorErrorTextColorNew">#E12828</color>
     <color name="grey">#ff424242</color>
+    <color name="red">#FF0000</color>
 
     <!-- Primary Orange Colors -->
     <color name="orange">#FFA726</color>  <!-- Light Orange -->

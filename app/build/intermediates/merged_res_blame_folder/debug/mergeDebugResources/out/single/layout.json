@@ -1,78 +1,86 @@
 [
     {
-        "merged": "com.example.savourit.app-mergeDebugResources-79:/layout/activity_upgrade_plan.xml",
-        "source": "com.example.savourit.app-main-82:/layout/activity_upgrade_plan.xml"
+        "merged": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-mergeDebugResources-80:/layout/fragment_chat.xml",
+        "source": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-main-83:/layout/fragment_chat.xml"
     },
     {
-        "merged": "com.example.savourit.app-mergeDebugResources-79:/layout/item_message.xml",
-        "source": "com.example.savourit.app-main-82:/layout/item_message.xml"
+        "merged": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-mergeDebugResources-80:/layout/fragment_settings.xml",
+        "source": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-main-83:/layout/fragment_settings.xml"
     },
     {
-        "merged": "com.example.savourit.app-mergeDebugResources-79:/layout/popup_filter_menu.xml",
-        "source": "com.example.savourit.app-main-82:/layout/popup_filter_menu.xml"
+        "merged": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-mergeDebugResources-80:/layout/activity_sign_up.xml",
+        "source": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-main-83:/layout/activity_sign_up.xml"
     },
     {
-        "merged": "com.example.savourit.app-mergeDebugResources-79:/layout/activity_main.xml",
-        "source": "com.example.savourit.app-main-82:/layout/activity_main.xml"
+        "merged": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-mergeDebugResources-80:/layout/popup_transport_mode.xml",
+        "source": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-main-83:/layout/popup_transport_mode.xml"
     },
     {
-        "merged": "com.example.savourit.app-mergeDebugResources-79:/layout/nav_header.xml",
-        "source": "com.example.savourit.app-main-82:/layout/nav_header.xml"
+        "merged": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-mergeDebugResources-80:/layout/activity_base.xml",
+        "source": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-main-83:/layout/activity_base.xml"
     },
     {
-        "merged": "com.example.savourit.app-mergeDebugResources-79:/layout/activity_sign_up.xml",
-        "source": "com.example.savourit.app-main-82:/layout/activity_sign_up.xml"
+        "merged": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-mergeDebugResources-80:/layout/activity_map.xml",
+        "source": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-main-83:/layout/activity_map.xml"
     },
     {
-        "merged": "com.example.savourit.app-mergeDebugResources-79:/layout/divider_layout.xml",
-        "source": "com.example.savourit.app-main-82:/layout/divider_layout.xml"
+        "merged": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-mergeDebugResources-80:/layout/fragment_friend_details.xml",
+        "source": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-main-83:/layout/fragment_friend_details.xml"
     },
     {
-        "merged": "com.example.savourit.app-mergeDebugResources-79:/layout/activity_login.xml",
-        "source": "com.example.savourit.app-main-82:/layout/activity_login.xml"
+        "merged": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-mergeDebugResources-80:/layout/activity_upgrade_plan.xml",
+        "source": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-main-83:/layout/activity_upgrade_plan.xml"
     },
     {
-        "merged": "com.example.savourit.app-mergeDebugResources-79:/layout/activity_profile.xml",
-        "source": "com.example.savourit.app-main-82:/layout/activity_profile.xml"
+        "merged": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-mergeDebugResources-80:/layout/activity_forgot_password.xml",
+        "source": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-main-83:/layout/activity_forgot_password.xml"
     },
     {
-        "merged": "com.example.savourit.app-mergeDebugResources-79:/layout/item_friend.xml",
-        "source": "com.example.savourit.app-main-82:/layout/item_friend.xml"
+        "merged": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-mergeDebugResources-80:/layout/activity_payment.xml",
+        "source": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-main-83:/layout/activity_payment.xml"
     },
     {
-        "merged": "com.example.savourit.app-mergeDebugResources-79:/layout/fragment_chat.xml",
-        "source": "com.example.savourit.app-main-82:/layout/fragment_chat.xml"
+        "merged": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-mergeDebugResources-80:/layout/fragment_friends.xml",
+        "source": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-main-83:/layout/fragment_friends.xml"
     },
     {
-        "merged": "com.example.savourit.app-mergeDebugResources-79:/layout/activity_forgot_password.xml",
-        "source": "com.example.savourit.app-main-82:/layout/activity_forgot_password.xml"
+        "merged": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-mergeDebugResources-80:/layout/item_message.xml",
+        "source": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-main-83:/layout/item_message.xml"
     },
     {
-        "merged": "com.example.savourit.app-mergeDebugResources-79:/layout/fragment_friend_details.xml",
-        "source": "com.example.savourit.app-main-82:/layout/fragment_friend_details.xml"
+        "merged": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-mergeDebugResources-80:/layout/item_friend.xml",
+        "source": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-main-83:/layout/item_friend.xml"
     },
     {
-        "merged": "com.example.savourit.app-mergeDebugResources-79:/layout/activity_map.xml",
-        "source": "com.example.savourit.app-main-82:/layout/activity_map.xml"
+        "merged": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-mergeDebugResources-80:/layout/activity_main.xml",
+        "source": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-main-83:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.savourit.app-mergeDebugResources-79:/layout/activity_payment.xml",
-        "source": "com.example.savourit.app-main-82:/layout/activity_payment.xml"
+        "merged": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-mergeDebugResources-80:/layout/popup_filter_menu.xml",
+        "source": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-main-83:/layout/popup_filter_menu.xml"
     },
     {
-        "merged": "com.example.savourit.app-mergeDebugResources-79:/layout/activity_base.xml",
-        "source": "com.example.savourit.app-main-82:/layout/activity_base.xml"
+        "merged": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-mergeDebugResources-80:/layout/activity_login.xml",
+        "source": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-main-83:/layout/activity_login.xml"
     },
     {
-        "merged": "com.example.savourit.app-mergeDebugResources-79:/layout/fragment_home.xml",
-        "source": "com.example.savourit.app-main-82:/layout/fragment_home.xml"
+        "merged": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-mergeDebugResources-80:/layout/fragment_home.xml",
+        "source": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-main-83:/layout/fragment_home.xml"
     },
     {
-        "merged": "com.example.savourit.app-mergeDebugResources-79:/layout/fragment_friends.xml",
-        "source": "com.example.savourit.app-main-82:/layout/fragment_friends.xml"
+        "merged": "com.example.savourit.app-mergeDebugResources-80:/layout/fragment_home.xml",
+        "source": "com.example.savourit.app-main-83:/layout/fragment_home.xml"
     },
     {
-        "merged": "com.example.savourit.app-mergeDebugResources-79:/layout/fragment_settings.xml",
-        "source": "com.example.savourit.app-main-82:/layout/fragment_settings.xml"
+        "merged": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-mergeDebugResources-80:/layout/activity_profile.xml",
+        "source": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-main-83:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-mergeDebugResources-80:/layout/divider_layout.xml",
+        "source": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-main-83:/layout/divider_layout.xml"
+    },
+    {
+        "merged": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-mergeDebugResources-80:/layout/nav_header.xml",
+        "source": "/Users/shemeneroje/.gradle/daemon/8.10.2/com.example.savourit.app-main-83:/layout/nav_header.xml"
     }
 ]
