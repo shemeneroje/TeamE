@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/walkOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Walking" />
+
+    <Button
+        android:id="@+id/bikeOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Biking" />
+
+    <Button
+        android:id="@+id/transitOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transit" />
+
+    <Button
+        android:id="@+id/driveOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Driving" />
+</LinearLayout>

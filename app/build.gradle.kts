@@ -17,6 +17,7 @@ if (localPropertiesFile.exists()) {
 
 val mapsApiKey = localProperties.getProperty("MAPS_API_KEY") ?: ""
 val placesApiKey = localProperties.getProperty("PLACES_API_KEY") ?: ""
+val directionsApiKey = localProperties.getProperty("DIRECTIONS_API_KEY") ?: ""
 android {
     namespace = "com.example.savourit"
     compileSdk = 35
@@ -32,6 +33,7 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         buildConfigField("String", "MAPS_API_KEY", "\"$mapsApiKey\"")
         buildConfigField("String", "PLACES_API_KEY", "\"$placesApiKey\"")
+        buildConfigField("String", "DIRECTIONS_API_KEY", "\"$directionsApiKey\"")
     }
 
     buildTypes {
@@ -99,8 +101,11 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment:$navVersion")
     implementation("androidx.navigation:navigation-ui:$navVersion")
     implementation (libs.places)
+    implementation ("com.google.android.libraries.places:places:2.7.0")
+    implementation ("com.google.maps.android:android-maps-utils:2.2.3")
 
-        implementation (platform("com.google.firebase:firebase-bom:32.7.0"))
+
+    implementation (platform("com.google.firebase:firebase-bom:32.7.0"))
         implementation ("com.google.firebase:firebase-auth")
         implementation ("com.google.firebase:firebase-database")
         implementation ("com.google.firebase:firebase-firestore:24.5.0")

@@ -1,14 +1,19 @@
 package com.example.savourit.feature.home;
 
 import android.Manifest;
+import android.app.AlertDialog;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
+import android.location.Location;
 import android.os.Bundle;
+import android.os.Looper;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.PopupWindow;
@@ -22,12 +27,20 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.savourit.BuildConfig;
 import com.example.savourit.R;
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationCallback;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationResult;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.location.Priority;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.android.libraries.places.api.Places;
 import com.google.android.libraries.places.api.model.Place;
 import com.google.android.libraries.places.api.model.PlaceLikelihood;
@@ -37,6 +50,7 @@ import com.google.android.libraries.places.api.net.PlacesStatusCodes;
 import com.google.android.libraries.places.widget.AutocompleteSupportFragment;
 import com.google.android.libraries.places.widget.listener.PlaceSelectionListener;
 import com.google.firebase.analytics.FirebaseAnalytics;
+import com.google.maps.android.PolyUtil;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -59,9 +73,14 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
     private FirebaseAnalytics analytics;
     private String apiKey;
     private ImageView filterIcon;
-    private String selectedCuisine = "All Cuisines";
+    private String selectedBudget = "No Budget";
     private HomeViewModel viewModel;
     private ExecutorService executorService;
+    private FusedLocationProviderClient fusedLocationClient;
+    private LocationCallback locationCallback;
+    private Button stopNavigationButton;
+    private LatLng currentDestination;
+
 
     public HomeFragment() {
         // Required empty public constructor
@@ -91,6 +110,12 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
                 // Call the method to fetch nearby places
                 fetchNearbyPlaces(userLatLng);  // Fetch nearby places after getting user location
             }
+        });
+
+        stopNavigationButton = rootView.findViewById(R.id.btnStopNavigation);
+        stopNavigationButton.setOnClickListener(v -> {
+            stopLocationUpdates();
+            stopNavigationButton.setVisibility(View.GONE); // Hide button when stopping
         });
 
         return rootView;
@@ -158,7 +183,60 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
         requestLocationPermission();
+
+        mMap.setOnMarkerClickListener(marker -> {
+            LatLng destination = marker.getPosition();
+            currentDestination = destination; // Save destination for real-time tracking
+
+            if (viewModel.getUserLocation().getValue() == null) {
+                Toast.makeText(requireContext(), "User location not available", Toast.LENGTH_SHORT).show();
+                return true;
+            }
+
+            LatLng userLocation = new LatLng(
+                    viewModel.getUserLocation().getValue().getLatitude(),
+                    viewModel.getUserLocation().getValue().getLongitude()
+            );
+
+            mMap.clear();
+            mMap.addMarker(new MarkerOptions().position(destination).title(marker.getTitle()));
+
+            // Start real-time tracking and fetch initial route
+            startLocationUpdates();
+            getDirections(userLocation, destination);
+
+            // Fetch place details for the selected restaurant
+            fetchPlaceDetails(marker);
+
+            return true;
+        });
     }
+
+
+    private void fetchPlaceDetails(Marker marker) {
+        String placeName = marker.getTitle();
+        String placeAddress = marker.getSnippet();
+
+        new AlertDialog.Builder(requireContext())
+                .setTitle(placeName)
+                .setMessage("Address: " + placeAddress + "\nDo you want directions?")
+                .setPositiveButton("Yes", (dialog, which) -> {
+                    // If Yes is clicked, get directions to the destination
+                    LatLng userLocation = new LatLng(
+                            viewModel.getUserLocation().getValue().getLatitude(),
+                            viewModel.getUserLocation().getValue().getLongitude()
+                    );
+                    getDirections(userLocation, marker.getPosition());
+                })
+                .setNegativeButton("No", (dialog, which) -> {
+                    // If No is clicked, dismiss the dialog and leave all markers visible
+                    dialog.dismiss();
+                })
+                .show();
+    }
+
+
+
 
     private void requestLocationPermission() {
         if (ActivityCompat.checkSelfPermission(requireContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -190,14 +268,14 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
         );
 
         ListView listView = popupView.findViewById(R.id.listView);
-        String[] cuisines = {"All Cuisines", "Italian", "Chinese", "Indian", "Mexican", "French"};
+        String[] budget = {"No Budget", "€1-€10", "€10-€20", "€20-€30"};
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(requireContext(), android.R.layout.simple_list_item_1, cuisines);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(requireContext(), android.R.layout.simple_list_item_1, budget);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener((parent, view, position, id) -> {
-            selectedCuisine = cuisines[position];
-            Toast.makeText(requireContext(), "Selected: " + selectedCuisine, Toast.LENGTH_SHORT).show();
+            selectedBudget = budget[position];
+            Toast.makeText(requireContext(), "Selected: " + selectedBudget, Toast.LENGTH_SHORT).show();
             popupWindow.dismiss();
         });
 
@@ -210,7 +288,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
         }
 
         // Define the radius for searching nearby places
-        final int radius = 1000; // 1 km radius
+        final int radius = 5000; // 5 km radius
 
         // Create a PlaceSearchRequest to find places around the user’s location
         String type = "restaurant|bar|cafe"; // Type filter to get restaurant, bar, and cafe
@@ -230,7 +308,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
             try {
                 // Send HTTP request (use your networking library of choice like Retrofit/OkHttp)
                 // Example with Retrofit or any HTTP client to get places
-                // We will use the url for simplicity.
+                // url for simplicity.
                 URL apiUrl = new URL(url);
                 HttpURLConnection connection = (HttpURLConnection) apiUrl.openConnection();
                 connection.setRequestMethod("GET");
@@ -277,7 +355,113 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
         });
     }
 
+    private void getDirections(LatLng origin, LatLng destination) {
+        String url = "https://maps.googleapis.com/maps/api/directions/json?"
+                + "origin=" + origin.latitude + "," + origin.longitude
+                + "&destination=" + destination.latitude + "," + destination.longitude
+                + "&mode=walking"
+                + "&key=" + BuildConfig.PLACES_API_KEY;
 
+        executorService.execute(() -> {
+            try {
+                URL apiUrl = new URL(url);
+                HttpURLConnection connection = (HttpURLConnection) apiUrl.openConnection();
+                connection.setRequestMethod("GET");
+                connection.connect();
+
+                int responseCode = connection.getResponseCode();
+                if (responseCode == 200) {
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+                    StringBuilder response = new StringBuilder();
+                    String line;
+                    while ((line = reader.readLine()) != null) {
+                        response.append(line);
+                    }
+
+                    JSONObject jsonResponse = new JSONObject(response.toString());
+                    JSONArray routes = jsonResponse.getJSONArray("routes");
+
+                    if (routes.length() > 0) {
+                        JSONObject route = routes.getJSONObject(0);
+                        JSONObject overviewPolyline = route.getJSONObject("overview_polyline");
+                        String encodedPolyline = overviewPolyline.getString("points");
+
+                        requireActivity().runOnUiThread(() -> drawRoute(encodedPolyline));
+
+                        // Check if user has arrived
+                        float[] results = new float[1];
+                        Location.distanceBetween(
+                                origin.latitude, origin.longitude,
+                                destination.latitude, destination.longitude,
+                                results
+                        );
+
+                        if (results[0] < 50) { // If user is within 50 meters
+                            requireActivity().runOnUiThread(() -> {
+                                Toast.makeText(requireContext(), "You have arrived!", Toast.LENGTH_LONG).show();
+                                stopLocationUpdates(); // Stop tracking
+                            });
+                        }
+                    }
+                } else {
+                    Log.e("DirectionsAPI", "Error fetching directions: " + responseCode);
+                }
+            } catch (Exception e) {
+                Log.e("DirectionsAPI", "Error fetching directions", e);
+            }
+        });
+    }
+
+
+    private void drawRoute(String encodedPolyline) {
+        List<LatLng> routePoints = PolyUtil.decode(encodedPolyline);
+        PolylineOptions polylineOptions = new PolylineOptions()
+                .addAll(routePoints)
+                .width(20)
+                .color(Color.BLUE)
+                .geodesic(true);
+
+        mMap.addPolyline(polylineOptions);
+    }
+
+
+    private void startLocationUpdates() {
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireContext());
+
+        LocationRequest locationRequest = LocationRequest.create()
+                .setInterval(5000)  // Update every 5 seconds
+                .setFastestInterval(3000)
+                .setPriority(Priority.PRIORITY_HIGH_ACCURACY);
+
+        locationCallback = new LocationCallback() {
+            @Override
+            public void onLocationResult(LocationResult locationResult) {
+                if (locationResult == null || locationResult.getLastLocation() == null) return;
+
+                Location newLocation = locationResult.getLastLocation();
+                LatLng newLatLng = new LatLng(newLocation.getLatitude(), newLocation.getLongitude());
+
+                // Update map camera
+                mMap.animateCamera(CameraUpdateFactory.newLatLng(newLatLng));
+
+                // Fetch updated directions to the destination
+                if (currentDestination != null) {
+                    getDirections(newLatLng, currentDestination);
+                }
+            }
+        };
+
+        if (ActivityCompat.checkSelfPermission(requireContext(), Manifest.permission.ACCESS_FINE_LOCATION)
+                == PackageManager.PERMISSION_GRANTED) {
+            fusedLocationClient.requestLocationUpdates(locationRequest, locationCallback, Looper.getMainLooper());
+        }
+    }
+
+    private void stopLocationUpdates() {
+        if (fusedLocationClient != null && locationCallback != null) {
+            fusedLocationClient.removeLocationUpdates(locationCallback);
+        }
+    }
 
 
     @Override
