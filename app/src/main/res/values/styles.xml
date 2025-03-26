@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Change status bar color -->
+        <item name="android:statusBarColor">@color/dark_orange</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowToggleStyle</item>
+        <item name="android:windowLightStatusBar">false</item> <!-- Ensures icons remain white -->
+    </style>
+    <style name="NavigationViewStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:listPreferredItemHeightSmall">40dp</item>
+    </style>
+        <style name="Theme.YourApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+            <!-- Change status bar color -->
+            <item name="android:statusBarColor">@color/orange</item>
+            <item name="android:windowLightStatusBar">false</item> <!-- Ensures icons remain white -->
+        </style>
+
+    <style name="TextInputEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingBottom">10dp</item> <!-- Reduced padding -->
+        <item name="android:textSize">16sp</item> <!-- Increased for better readability -->
+        <item name="android:paddingStart">12dp</item> <!-- Adjusted for better spacing -->
+        <item name="android:paddingEnd">12dp</item> <!-- Uniform padding -->
+        <item name="android:background">@null</item> <!-- Removes unwanted background -->
+        <item name="android:fontFamily">@font/roboto_light</item>
+        <item name="android:textColor">@color/colorTextColor</item>
+        <item name="android:textColorHint">@color/colorTextColorHint</item>
+    </style>
+
+    <style name="TextInputHintTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">11sp</item>
+        <!--        <item name="android:fontFamily">@font/roboto_regular</item>-->
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+    <style name="TextInputErrorTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">8sp</item>
+        <!--        <item name="android:fontFamily">@font/roboto_regular</item>-->
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/colorErrorTextColorNew</item>
+        <item name="android:layout_marginStart">52dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+    <style name="CustomToolbarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/white</item> <!-- Changes icons color -->
+    </style>
+    <style name="DrawerArrowToggleStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+</resources>

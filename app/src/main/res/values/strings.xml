@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Savour It</string>
+    <string name="nav_open">Open Navigation Drawer</string>
+    <string name="nav_close">Close Navigation Drawer</string>
+    <string name="image">Image</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string-array name="cuisine_array">
+        <item>All Cuisines</item>
+        <item>Italian</item>
+        <item>Chinese</item>
+        <item>Indian</item>
+        <item>Mexican</item>
+        <item>French</item>
+    </string-array>
+    <string name="filter_icon">Filter Icon</string>
+    <string name="chat_with">Chat with %s</string>
+    <string name="error_invalid_user">Invalid user. Please try again.</string>
+    <string name="error_sending_message">Failed to send message. Try again.</string>
+    <string name="do_not_have_account">Don\'t have an account yet? Signup" "</string>
+    <string name="password">Password</string>
+    <string name="please_sign_in_to_continue">Please sign in to continue.</string>
+    <string name="welcome_to_savour_it_v_0_0_1">Welcome to Savour-It - V 0.0.1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
+

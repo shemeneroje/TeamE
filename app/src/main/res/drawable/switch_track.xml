@@ -1,0 +1,17 @@
+<!-- res/drawable/switch_track.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Checked state -->
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/your_checked_track_color" /> <!-- Change to your desired color -->
+            <corners android:radius="14dp" /> <!-- Adjust radius as needed -->
+        </shape>
+    </item>
+    <!-- Unchecked state -->
+    <item android:state_checked="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/your_unchecked_track_color" /> <!-- Change to your desired color -->
+            <corners android:radius="14dp" /> <!-- Adjust radius as needed -->
+        </shape>
+    </item>
+</selector>
