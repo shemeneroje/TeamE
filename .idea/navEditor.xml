@@ -8,6 +8,18 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
+                  <entry key="fragment_profile">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="12" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="nav_chat">
                     <value>
                       <LayoutPositions>
@@ -36,7 +48,7 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
-                            <entry key="friends_to_friends_details">
+                            <entry key="friends_to_friends_detail">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -69,6 +81,16 @@
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_nav_home_to_nav_settings">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_nav_home_to_profileFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="home_to_friends">
                               <value>
                                 <LayoutPositions />

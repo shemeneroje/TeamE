@@ -62,7 +62,7 @@
             android:contentDescription="Emoji Button"/>
 
         <!-- Message Input -->
-        <EditText
+        <com.vanniktech.emoji.EmojiEditText
             android:id="@+id/edtMessage"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -70,7 +70,8 @@
             android:minHeight="48dp"
             android:padding="12dp"
             android:background="@drawable/custom_edittext"
-            android:hint="Type a message"/>
+            android:hint="Type a message" />
+
 
         <!-- Send Button -->
         <Button

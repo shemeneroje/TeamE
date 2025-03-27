@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.savourit.app-mergeDebugResources-78:/values-iw/values-iw.xml",
+            "outputFile": "com.example.savourit.app-mergeDebugResources-80:/values-iw/values-iw.xml",
             "map": [
                 {
                     "source": "C:\\Users\\lenovo\\.gradle\\caches\\8.10.2\\transforms\\e6abc733bf1aec34ac410ca1f951c5ec\\transformed\\credentials-1.2.0-rc01\\res\\values-iw\\values-iw.xml",

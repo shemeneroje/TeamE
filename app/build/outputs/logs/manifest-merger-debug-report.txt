@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:2:1-66:12
-INJECTED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:2:1-66:12
-INJECTED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:2:1-66:12
-INJECTED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:2:1-66:12
+ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:2:1-67:12
+INJECTED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:2:1-67:12
+INJECTED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:2:1-67:12
+INJECTED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:2:1-67:12
 MERGED from [androidx.databinding:databinding-adapters:8.8.2] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\f638fb7226806ddc2f02c06725028624\transformed\databinding-adapters-8.8.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-ktx:8.8.2] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\f8c3ab65635b4d31842064f8eff4ea15\transformed\databinding-ktx-8.8.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-runtime:8.8.2] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\3e20f559465317f61e738ad928721a7d\transformed\databinding-runtime-8.8.2\AndroidManifest.xml:2:1-7:12
@@ -15,6 +15,8 @@ MERGED from [androidx.navigation:navigation-ui:2.8.8] C:\Users\lenovo\.gradle\ca
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\b61f7043d78d68b4f1fd223efa9eabcd\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\28e9bb35ed15305d4f8d97a1f4592a93\transformed\constraintlayout-2.2.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.libraries.places:places:4.1.0] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\302298f702a1a39f1397d4bf4f2c0b3f\transformed\places-4.1.0\AndroidManifest.xml:2:1-24:12
+MERGED from [com.vanniktech:emoji-google:0.8.0] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\5ce417abd518cbe49d6e12c90970d200\transformed\emoji-google-0.8.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.vanniktech:emoji:0.8.0] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\d5a5fd65a7f8c1a9e6d0ea1eebc7c60c\transformed\emoji-0.8.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\4b9f7163ba067e791893a05bce2c61ba\transformed\appcompat-resources-1.7.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.appcompat:appcompat:1.7.0] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\5b5e5d377045e30a77a3c641a281cf5f\transformed\appcompat-1.7.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-auth:23.2.0] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\446a5052b79fae4496cae40b874fa055\transformed\firebase-auth-23.2.0\AndroidManifest.xml:17:1-75:12
@@ -199,8 +201,8 @@ MERGED from [io.grpc:grpc-android:1.62.2] C:\Users\lenovo\.gradle\caches\8.10.2\
 	android:name
 		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:9:22-76
 application
-ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:11:5-64:19
-INJECTED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:11:5-64:19
+ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:11:5-65:19
+INJECTED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:11:5-65:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\b61f7043d78d68b4f1fd223efa9eabcd\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\b61f7043d78d68b4f1fd223efa9eabcd\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\28e9bb35ed15305d4f8d97a1f4592a93\transformed\constraintlayout-2.2.0\AndroidManifest.xml:7:5-20
@@ -278,97 +280,99 @@ MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\lenovo\.gradle\
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.15.0] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\52db9ad43333f42df1b4e636ab7fdea8\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:18:9-35
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:19:9-35
 	android:label
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:16:9-41
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:17:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:14:9-54
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:15:9-54
 	android:roundIcon
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:17:9-54
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:18:9-54
 	tools:targetApi
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:20:9-29
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:21:9-29
 	android:icon
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:15:9-43
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:16:9-43
 	android:allowBackup
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:13:9-35
 	android:theme
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:19:9-37
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:20:9-37
 	android:dataExtractionRules
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:13:9-65
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:14:9-65
+	android:name
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:12:9-28
 activity#com.example.savourit.base.BaseActivity
-ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:21:9-22:39
+ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:22:9-23:39
 	android:exported
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:22:13-37
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:23:13-37
 	android:name
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:21:19-52
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:22:19-52
 activity#com.example.savourit.PaymentActivity
-ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:23:9-25:40
+ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:24:9-26:40
 	android:exported
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:25:13-37
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:24:13-44
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:25:13-44
 activity#com.example.savourit.UpgradePlanActivity
-ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:26:9-28:40
+ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:27:9-29:40
 	android:exported
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:28:13-37
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:29:13-37
 	android:name
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:27:13-48
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:28:13-48
 activity#com.example.savourit.ProfileActivity
-ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:29:9-31:40
+ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:30:9-32:40
 	android:exported
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:31:13-37
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:30:13-44
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:31:13-44
 activity#com.example.savourit.feature.auth.ForgotPasswordActivity
-ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:32:9-34:40
+ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:33:9-35:40
 	android:exported
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:34:13-37
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:35:13-37
 	android:name
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:33:13-64
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:34:13-64
 activity#com.example.savourit.feature.auth.signup.SignUpActivity
-ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:35:9-37:40
+ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:36:9-38:40
 	android:exported
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:37:13-37
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:38:13-37
 	android:name
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:36:13-63
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:37:13-63
 activity#com.example.savourit.feature.auth.login.LoginActivity
-ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:38:9-43:20
+ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:39:9-44:20
 	android:exported
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:40:13-37
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:41:13-37
 	android:name
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:39:13-61
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:40:13-61
 activity#com.example.savourit.MainActivity
-ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:44:9-54:20
+ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:45:9-55:20
 	android:label
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:47:13-45
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:48:13-45
 	android:exported
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:46:13-36
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:47:13-36
 	android:theme
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:48:13-50
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:49:13-50
 	android:name
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:45:13-41
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:46:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:49:13-53:29
+ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:50:13-54:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:50:17-69
+ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:51:17-69
 	android:name
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:50:25-66
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:51:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:52:17-77
+ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:53:17-77
 	android:name
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:52:27-74
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:53:27-74
 activity#com.example.savourit.MapActivity
-ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:56:9-58:40
+ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:57:9-59:40
 	android:exported
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:58:13-37
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:59:13-37
 	android:name
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:57:13-40
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:58:13-40
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:61:9-63:71
+ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:62:9-64:71
 	android:value
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:63:13-68
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:64:13-68
 	android:name
-		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:62:13-58
+		ADDED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml:63:13-58
 uses-sdk
 INJECTED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\AndroidManifest.xml
@@ -395,6 +399,10 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\lenovo\.
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\28e9bb35ed15305d4f8d97a1f4592a93\transformed\constraintlayout-2.2.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.libraries.places:places:4.1.0] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\302298f702a1a39f1397d4bf4f2c0b3f\transformed\places-4.1.0\AndroidManifest.xml:7:5-44
 MERGED from [com.google.android.libraries.places:places:4.1.0] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\302298f702a1a39f1397d4bf4f2c0b3f\transformed\places-4.1.0\AndroidManifest.xml:7:5-44
+MERGED from [com.vanniktech:emoji-google:0.8.0] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\5ce417abd518cbe49d6e12c90970d200\transformed\emoji-google-0.8.0\AndroidManifest.xml:5:5-44
+MERGED from [com.vanniktech:emoji-google:0.8.0] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\5ce417abd518cbe49d6e12c90970d200\transformed\emoji-google-0.8.0\AndroidManifest.xml:5:5-44
+MERGED from [com.vanniktech:emoji:0.8.0] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\d5a5fd65a7f8c1a9e6d0ea1eebc7c60c\transformed\emoji-0.8.0\AndroidManifest.xml:5:5-44
+MERGED from [com.vanniktech:emoji:0.8.0] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\d5a5fd65a7f8c1a9e6d0ea1eebc7c60c\transformed\emoji-0.8.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\4b9f7163ba067e791893a05bce2c61ba\transformed\appcompat-resources-1.7.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\4b9f7163ba067e791893a05bce2c61ba\transformed\appcompat-resources-1.7.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.appcompat:appcompat:1.7.0] C:\Users\lenovo\.gradle\caches\8.10.2\transforms\5b5e5d377045e30a77a3c641a281cf5f\transformed\appcompat-1.7.0\AndroidManifest.xml:5:5-44

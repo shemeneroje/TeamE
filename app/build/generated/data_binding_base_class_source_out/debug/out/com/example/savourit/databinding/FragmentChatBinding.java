@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -16,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.savourit.R;
+import com.vanniktech.emoji.EmojiEditText;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -34,7 +34,7 @@ public final class FragmentChatBinding implements ViewBinding {
   public final Button btnSend;
 
   @NonNull
-  public final EditText edtMessage;
+  public final EmojiEditText edtMessage;
 
   @NonNull
   public final LinearLayout messageContainer;
@@ -46,7 +46,7 @@ public final class FragmentChatBinding implements ViewBinding {
   public final TextView txtChatTitle;
 
   private FragmentChatBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView btnBack,
-      @NonNull ImageView btnEmoji, @NonNull Button btnSend, @NonNull EditText edtMessage,
+      @NonNull ImageView btnEmoji, @NonNull Button btnSend, @NonNull EmojiEditText edtMessage,
       @NonNull LinearLayout messageContainer, @NonNull RecyclerView recyclerChat,
       @NonNull TextView txtChatTitle) {
     this.rootView = rootView;
@@ -105,7 +105,7 @@ public final class FragmentChatBinding implements ViewBinding {
       }
 
       id = R.id.edtMessage;
-      EditText edtMessage = ViewBindings.findChildViewById(rootView, id);
+      EmojiEditText edtMessage = ViewBindings.findChildViewById(rootView, id);
       if (edtMessage == null) {
         break missingId;
       }

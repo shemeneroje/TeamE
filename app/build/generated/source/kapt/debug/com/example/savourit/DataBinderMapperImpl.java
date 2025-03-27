@@ -7,6 +7,9 @@ import androidx.databinding.DataBinderMapper;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
 import com.example.savourit.databinding.ActivityLoginBindingImpl;
+import com.example.savourit.databinding.ActivityProfileBindingImpl;
+import com.example.savourit.databinding.FragmentForgotPasswordBindingImpl;
+import com.example.savourit.databinding.FragmentProfileBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
@@ -20,10 +23,19 @@ import java.util.List;
 public class DataBinderMapperImpl extends DataBinderMapper {
   private static final int LAYOUT_ACTIVITYLOGIN = 1;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(1);
+  private static final int LAYOUT_ACTIVITYPROFILE = 2;
+
+  private static final int LAYOUT_FRAGMENTFORGOTPASSWORD = 3;
+
+  private static final int LAYOUT_FRAGMENTPROFILE = 4;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(4);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.savourit.R.layout.activity_login, LAYOUT_ACTIVITYLOGIN);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.savourit.R.layout.activity_profile, LAYOUT_ACTIVITYPROFILE);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.savourit.R.layout.fragment_forgot_password, LAYOUT_FRAGMENTFORGOTPASSWORD);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.savourit.R.layout.fragment_profile, LAYOUT_FRAGMENTPROFILE);
   }
 
   @Override
@@ -40,6 +52,24 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new ActivityLoginBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for activity_login is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ACTIVITYPROFILE: {
+          if ("layout/activity_profile_0".equals(tag)) {
+            return new ActivityProfileBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_profile is invalid. Received: " + tag);
+        }
+        case  LAYOUT_FRAGMENTFORGOTPASSWORD: {
+          if ("layout/fragment_forgot_password_0".equals(tag)) {
+            return new FragmentForgotPasswordBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_forgot_password is invalid. Received: " + tag);
+        }
+        case  LAYOUT_FRAGMENTPROFILE: {
+          if ("layout/fragment_profile_0".equals(tag)) {
+            return new FragmentProfileBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_profile is invalid. Received: " + tag);
         }
       }
     }
@@ -95,10 +125,13 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(1);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(4);
 
     static {
       sKeys.put("layout/activity_login_0", com.example.savourit.R.layout.activity_login);
+      sKeys.put("layout/activity_profile_0", com.example.savourit.R.layout.activity_profile);
+      sKeys.put("layout/fragment_forgot_password_0", com.example.savourit.R.layout.fragment_forgot_password);
+      sKeys.put("layout/fragment_profile_0", com.example.savourit.R.layout.fragment_profile);
     }
   }
 }

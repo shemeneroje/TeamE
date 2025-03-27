@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.savourit.app-mergeDebugResources-78:/values-v21/values-v21.xml",
+            "outputFile": "com.example.savourit.app-mergeDebugResources-80:/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\lenovo\\.gradle\\caches\\8.10.2\\transforms\\ab8280be0845954ca692aed3c7eb51cb\\transformed\\credentials-play-services-auth-1.2.0-rc01\\res\\values-v21\\values-v21.xml",

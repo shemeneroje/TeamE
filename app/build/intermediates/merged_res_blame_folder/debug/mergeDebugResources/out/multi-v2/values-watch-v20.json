@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.savourit.app-mergeDebugResources-78:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.example.savourit.app-mergeDebugResources-80:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
                     "source": "C:\\Users\\lenovo\\.gradle\\caches\\8.10.2\\transforms\\4b21d4fcca0f1a7a2994cf942739274d\\transformed\\play-services-auth-21.3.0\\res\\values-watch-v20\\values.xml",

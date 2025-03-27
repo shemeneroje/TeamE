@@ -123,9 +123,16 @@ public class FriendDetailsFragment extends Fragment {
                                             .addOnSuccessListener(restaurantDoc -> {
                                                 String restaurantName = restaurantDoc.getString("name");
                                                 if (restaurantName == null) restaurantName = "Unknown Restaurant";
-                                                Log.d("DEBUG", "Adding review: " + restaurantName + " | rating: " + ratingFinal[0] + " | liked: " + isLiked);
 
-                                                tempList.add(new Review(restaurantName, commentFinal[0], ratingFinal[0], isLiked));
+                                                Review review = new Review();
+                                                review.setComment(commentFinal[0]);
+                                                review.setRating(ratingFinal[0]);
+                                                review.setLiked(isLiked);
+                                                review.setTimestamp(System.currentTimeMillis());
+                                                review.setRestaurantId(resId);
+                                                review.setRestaurantName(restaurantName);
+
+                                                tempList.add(review);
 
                                                 completed[0]++;
                                                 if (completed[0] == totalReviews) {
@@ -133,6 +140,7 @@ public class FriendDetailsFragment extends Fragment {
                                                     reviewAdapter.notifyDataSetChanged();
                                                 }
                                             })
+
                                             .addOnFailureListener(e -> {
                                                 Log.e("DEBUG", "Failed to fetch restaurant", e);
                                                 completed[0]++;

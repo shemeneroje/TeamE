@@ -523,7 +523,11 @@ attr elevation
 attr elevationOverlayAccentColor
 attr elevationOverlayColor
 attr elevationOverlayEnabled
+attr emojiBackground
 attr emojiCompatEnabled
+attr emojiDivider
+attr emojiIcons
+attr emojiSize
 attr enableEdgeToEdge
 attr endIconCheckable
 attr endIconContentDescription
@@ -1529,6 +1533,14 @@ color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
 color dim_foreground_material_light
+color emoji_background
+color emoji_black
+color emoji_divider
+color emoji_gray20
+color emoji_gray70
+color emoji_grey_900
+color emoji_icons
+color emoji_white
 color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
@@ -2734,6 +2746,8 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen emoji_grid_view_column_width
+dimen emoji_grid_view_spacing
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
@@ -3533,6 +3547,72 @@ drawable design_snackbar_background
 drawable dialog_bg
 drawable edit_text_background
 drawable editable_bg
+drawable emoji_backspace
+drawable emoji_google_category_activities
+drawable emoji_google_category_animalsandnature
+drawable emoji_google_category_flags
+drawable emoji_google_category_foodanddrink
+drawable emoji_google_category_objects
+drawable emoji_google_category_smileysandpeople
+drawable emoji_google_category_symbols
+drawable emoji_google_category_travelandplaces
+drawable emoji_google_sheet_0
+drawable emoji_google_sheet_1
+drawable emoji_google_sheet_10
+drawable emoji_google_sheet_11
+drawable emoji_google_sheet_12
+drawable emoji_google_sheet_13
+drawable emoji_google_sheet_14
+drawable emoji_google_sheet_15
+drawable emoji_google_sheet_16
+drawable emoji_google_sheet_17
+drawable emoji_google_sheet_18
+drawable emoji_google_sheet_19
+drawable emoji_google_sheet_2
+drawable emoji_google_sheet_20
+drawable emoji_google_sheet_21
+drawable emoji_google_sheet_22
+drawable emoji_google_sheet_23
+drawable emoji_google_sheet_24
+drawable emoji_google_sheet_25
+drawable emoji_google_sheet_26
+drawable emoji_google_sheet_27
+drawable emoji_google_sheet_28
+drawable emoji_google_sheet_29
+drawable emoji_google_sheet_3
+drawable emoji_google_sheet_30
+drawable emoji_google_sheet_31
+drawable emoji_google_sheet_32
+drawable emoji_google_sheet_33
+drawable emoji_google_sheet_34
+drawable emoji_google_sheet_35
+drawable emoji_google_sheet_36
+drawable emoji_google_sheet_37
+drawable emoji_google_sheet_38
+drawable emoji_google_sheet_39
+drawable emoji_google_sheet_4
+drawable emoji_google_sheet_40
+drawable emoji_google_sheet_41
+drawable emoji_google_sheet_42
+drawable emoji_google_sheet_43
+drawable emoji_google_sheet_44
+drawable emoji_google_sheet_45
+drawable emoji_google_sheet_46
+drawable emoji_google_sheet_47
+drawable emoji_google_sheet_48
+drawable emoji_google_sheet_49
+drawable emoji_google_sheet_5
+drawable emoji_google_sheet_50
+drawable emoji_google_sheet_51
+drawable emoji_google_sheet_52
+drawable emoji_google_sheet_53
+drawable emoji_google_sheet_54
+drawable emoji_google_sheet_55
+drawable emoji_google_sheet_6
+drawable emoji_google_sheet_7
+drawable emoji_google_sheet_8
+drawable emoji_google_sheet_9
+drawable emoji_recent
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable gradient_button
@@ -3556,6 +3636,7 @@ drawable ic_join_team
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_liked
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
@@ -3570,6 +3651,7 @@ drawable ic_password
 drawable ic_profile_icon
 drawable ic_search_black_24
 drawable ic_settings
+drawable ic_unliked
 drawable indeterminate_static
 drawable logo
 drawable m3_avd_hide_password
@@ -3742,10 +3824,11 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_nav_home_to_nav_settings
+id action_nav_home_to_profileFragment
 id action_text
 id actions
 id activity_chooser_view_content
-id activity_profile
 id add
 id adjust_height
 id adjust_width
@@ -3772,6 +3855,7 @@ id auto_update_label
 id autocomplete_fragment
 id axisRelative
 id back_button
+id back_button_container
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3792,6 +3876,7 @@ id browser_actions_menu_view
 id btnAddFriend
 id btnBack
 id btnEmoji
+id btnLike
 id btnSend
 id buttonPanel
 id buttonSignUp
@@ -3899,6 +3984,10 @@ id emailAddressTitle
 id email_input
 id email_layout
 id embed
+id emojiPopupWindowSkinPopupContainer
+id emojiViewDivider
+id emojiViewPager
+id emojiViewTab
 id end
 id endToStart
 id enterAlways
@@ -3916,7 +4005,7 @@ id fill_horizontal
 id fill_vertical
 id filled
 id filterIcon
-id firstNameTitle
+id firstname_layout
 id fitCenter
 id fitEnd
 id fitStart
@@ -3927,8 +4016,11 @@ id flip
 id floating
 id forever
 id forgot_description
+id forgot_password_subtitle
+id forgot_password_title
 id forgot_title
 id fragment_container_view_tag
+id fragment_profile
 id friends_to_chat
 id friends_to_friends_detail
 id frost
@@ -3973,12 +4065,13 @@ id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
 id labeled
-id lastNameTitle
+id lastname_layout
 id layout
 id left
 id leftToRight
 id legacy
 id light
+id liked_restaurants_title
 id line1
 id line3
 id linear
@@ -3990,6 +4083,7 @@ id login_button_container
 id login_subtitle
 id login_title
 id logout_button
+id logout_button_container
 id ltr
 id m3_side_sheet
 id main
@@ -4143,6 +4237,8 @@ id position
 id postLayout
 id pressed
 id profile_image
+id profile_subtitle
+id profile_title
 id progress_bar
 id progress_circular
 id progress_horizontal
@@ -4152,9 +4248,9 @@ id rectangles
 id recyclerChat
 id recyclerFriendReviews
 id recyclerFriends
+id recyclerLiked
 id report_drawn
 id reset_button
-id reset_password_button
 id reverseSawtooth
 id right
 id rightToLeft
@@ -4287,7 +4383,10 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tv_do_not_have_account
+id tv_email
 id tv_email_error
+id tv_firstname
+id tv_lastname
 id tv_password_error
 id txtChatTitle
 id txtComment
@@ -4298,6 +4397,7 @@ id txtFriendUsername
 id txtFriendsTitle
 id txtLiked
 id txtMessage
+id txtName
 id txtRating
 id txtRestaurantName
 id txtUsername
@@ -4305,7 +4405,6 @@ id unchecked
 id uniform
 id unlabeled
 id up
-id upgrade_button
 id upgrade_plus_button
 id upgrade_premium_button
 id useLogo
@@ -4477,15 +4576,22 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout divider_layout
+layout emoji_adapter_item
+layout emoji_popup_window_skin
+layout emoji_view
+layout emoji_view_category
 layout fragment_chat
+layout fragment_forgot_password
 layout fragment_friend_details
 layout fragment_friends
 layout fragment_home
+layout fragment_profile
 layout fragment_settings
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_friend
 layout item_message
+layout item_restaurant
 layout item_review
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -4639,10 +4745,21 @@ string common_signin_button_text_long
 string copy_toast_msg
 string default_error_message
 string default_popup_window_title
+string define_emoji
 string dest_title
 string do_not_have_account
 string dropdown_menu
 string email
+string emoji_backspace
+string emoji_category_recent
+string emoji_google_category_activities
+string emoji_google_category_animalsandnature
+string emoji_google_category_flags
+string emoji_google_category_foodanddrink
+string emoji_google_category_objects
+string emoji_google_category_smileysandpeople
+string emoji_google_category_symbols
+string emoji_google_category_travelandplaces
 string error_a11y_label
 string error_icon_content_description
 string error_invalid_user
@@ -4666,6 +4783,16 @@ string image
 string in_progress
 string indeterminate
 string item_view_role_description
+string library_emoji_author
+string library_emoji_isOpenSource
+string library_emoji_libraryDescription
+string library_emoji_libraryName
+string library_emoji_libraryVersion
+string library_emoji_libraryWebsite
+string library_emoji_licenseId
+string library_emoji_owner
+string library_emoji_repositoryLink
+string library_emoji_year
 string login
 string m3_exceed_max_badge_text_suffix
 string m3_ref_typeface_brand_medium
@@ -6009,6 +6136,7 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style emoji_fade_animation_style
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
@@ -6062,6 +6190,11 @@ styleable CustomAttribute attributeName customBoolean customColorDrawableValue c
 styleable DialogFragmentNavigator android_name
 styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness
 styleable DrawerLayout elevation
+styleable EmojiAutoCompleteTextView emojiSize
+styleable EmojiButton emojiSize
+styleable EmojiEditText emojiSize
+styleable EmojiMultiAutoCompleteTextView emojiSize
+styleable EmojiTextView emojiSize
 styleable ExtendedFloatingActionButton collapsedSize elevation extendMotionSpec extendStrategy hideMotionSpec showMotionSpec shrinkMotionSpec
 styleable ExtendedFloatingActionButton_Behavior_Layout behavior_autoHide behavior_autoShrink
 styleable FloatingActionButton android_enabled backgroundTint backgroundTintMode borderWidth elevation ensureMinTouchTargetSize fabCustomSize fabSize hideMotionSpec hoveredFocusedTranslationZ maxImageSize pressedTranslationZ rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec useCompatPadding

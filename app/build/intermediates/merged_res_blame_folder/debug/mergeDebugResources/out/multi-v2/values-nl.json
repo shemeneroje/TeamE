@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.savourit.app-mergeDebugResources-78:/values-nl/values-nl.xml",
+            "outputFile": "com.example.savourit.app-mergeDebugResources-80:/values-nl/values-nl.xml",
             "map": [
                 {
                     "source": "C:\\Users\\lenovo\\.gradle\\caches\\8.10.2\\transforms\\b018874d64fbd36e2d0277e6279cc72b\\transformed\\foundation-release\\res\\values-nl\\values-nl.xml",

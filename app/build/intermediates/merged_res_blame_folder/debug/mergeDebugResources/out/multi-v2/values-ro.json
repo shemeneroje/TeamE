@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.savourit.app-mergeDebugResources-78:/values-ro/values-ro.xml",
+            "outputFile": "com.example.savourit.app-mergeDebugResources-80:/values-ro/values-ro.xml",
             "map": [
                 {
                     "source": "C:\\Users\\lenovo\\.gradle\\caches\\8.10.2\\transforms\\5de17760f07ed3a8441543b07de55a2b\\transformed\\ui-release\\res\\values-ro\\values-ro.xml",

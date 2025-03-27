@@ -34,7 +34,7 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.ReviewView
         holder.txtRating.setText(ratingText);
         holder.txtComment.setText(review.getComment());
 
-        if (review.getLiked()) {
+        if (review.isLiked()) {
             holder.txtLiked.setVisibility(View.VISIBLE);
         } else {
             holder.txtLiked.setVisibility(View.GONE);

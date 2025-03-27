@@ -8,7 +8,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.savourit.R;
@@ -21,21 +20,11 @@ public final class FragmentHomeBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final FragmentContainerView autocompleteFragment;
-
-  @NonNull
   public final ImageView filterIcon;
 
-  @NonNull
-  public final FragmentContainerView map;
-
-  private FragmentHomeBinding(@NonNull LinearLayout rootView,
-      @NonNull FragmentContainerView autocompleteFragment, @NonNull ImageView filterIcon,
-      @NonNull FragmentContainerView map) {
+  private FragmentHomeBinding(@NonNull LinearLayout rootView, @NonNull ImageView filterIcon) {
     this.rootView = rootView;
-    this.autocompleteFragment = autocompleteFragment;
     this.filterIcon = filterIcon;
-    this.map = map;
   }
 
   @Override
@@ -65,26 +54,13 @@ public final class FragmentHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.autocomplete_fragment;
-      FragmentContainerView autocompleteFragment = ViewBindings.findChildViewById(rootView, id);
-      if (autocompleteFragment == null) {
-        break missingId;
-      }
-
       id = R.id.filterIcon;
       ImageView filterIcon = ViewBindings.findChildViewById(rootView, id);
       if (filterIcon == null) {
         break missingId;
       }
 
-      id = R.id.map;
-      FragmentContainerView map = ViewBindings.findChildViewById(rootView, id);
-      if (map == null) {
-        break missingId;
-      }
-
-      return new FragmentHomeBinding((LinearLayout) rootView, autocompleteFragment, filterIcon,
-          map);
+      return new FragmentHomeBinding((LinearLayout) rootView, filterIcon);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

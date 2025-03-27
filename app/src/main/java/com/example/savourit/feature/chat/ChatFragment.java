@@ -5,11 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import com.vanniktech.emoji.EmojiEditText;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -17,14 +16,14 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.navigation.Navigation;
-
 import com.example.savourit.R;
 import com.example.savourit.adapters.ChatAdapter;
 import com.example.savourit.feature.chat.viewmodel.ChatViewModel;
+import com.vanniktech.emoji.EmojiPopup;
 
 public class ChatFragment extends Fragment {
     private TextView txtChatTitle;
-    private EditText edtMessage;
+    private EmojiEditText edtMessage;
     private Button btnSend;
     private ImageView btnBack;
     private RecyclerView recyclerChat;
@@ -53,7 +52,12 @@ public class ChatFragment extends Fragment {
         recyclerChat = view.findViewById(R.id.recyclerChat);
 
         chatViewModel = new ViewModelProvider(this).get(ChatViewModel.class);
+        // Init EmojiPopup
+        EmojiPopup emojiPopup = EmojiPopup.Builder.fromRootView(view).build(edtMessage);
 
+        // Toggle emoji popup on icon click
+        ImageView btnEmoji = view.findViewById(R.id.btnEmoji);
+        btnEmoji.setOnClickListener(v -> emojiPopup.toggle());
         // Retrieve friendId from navigation arguments
         if (getArguments() != null) {
             friendId = getArguments().getString("friendId");

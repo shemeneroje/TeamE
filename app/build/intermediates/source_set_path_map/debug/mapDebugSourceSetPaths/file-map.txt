@@ -24,60 +24,62 @@ com.example.savourit.app-activity-1.10.0-22 C:\Users\lenovo\.gradle\caches\8.10.
 com.example.savourit.app-ui-graphics-release-23 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\56df7365f198cb9379b14f520ddb3863\transformed\ui-graphics-release\res
 com.example.savourit.app-lifecycle-runtime-ktx-release-24 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\57d787fb0d26710b10de618b94d939eb\transformed\lifecycle-runtime-ktx-release\res
 com.example.savourit.app-appcompat-1.7.0-25 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\5b5e5d377045e30a77a3c641a281cf5f\transformed\appcompat-1.7.0\res
-com.example.savourit.app-ui-release-26 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\5de17760f07ed3a8441543b07de55a2b\transformed\ui-release\res
-com.example.savourit.app-savedstate-1.2.1-27 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\6a696c1a6f56c8d29c496421c3d94209\transformed\savedstate-1.2.1\res
-com.example.savourit.app-runtime-saveable-release-28 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\6d000f02c6155fdaffa42b6fc4a414f4\transformed\runtime-saveable-release\res
-com.example.savourit.app-firebase-common-21.0.0-29 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\6d1fef8d9ad118115b2498184f8c384e\transformed\firebase-common-21.0.0\res
-com.example.savourit.app-lifecycle-runtime-release-30 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\72140c9308532ba456103ea3dbc29ff3\transformed\lifecycle-runtime-release\res
-com.example.savourit.app-navigation-ui-2.8.8-31 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\75c1b0090d5fd30829f2f8e6ee7692c8\transformed\navigation-ui-2.8.8\res
-com.example.savourit.app-navigation-fragment-2.8.8-32 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\77fd53296734dbcc71f891ba98e2f32d\transformed\navigation-fragment-2.8.8\res
-com.example.savourit.app-lifecycle-livedata-core-ktx-2.8.7-33 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\7d14bcfc601c94c20e7be30ae1e9039f\transformed\lifecycle-livedata-core-ktx-2.8.7\res
-com.example.savourit.app-ui-tooling-release-34 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\7f7ca984bf22bc3a68921d64167c56ea\transformed\ui-tooling-release\res
-com.example.savourit.app-animation-core-release-35 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\807f64429fc287b56d5a050e445e0bc0\transformed\animation-core-release\res
-com.example.savourit.app-material-icons-core-release-36 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\810270224795fbb1954b7655df190c7e\transformed\material-icons-core-release\res
-com.example.savourit.app-core-ktx-1.15.0-37 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\85748cbc31495aabdeaac3b80c03d51f\transformed\core-ktx-1.15.0\res
-com.example.savourit.app-ui-tooling-data-release-38 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\8822e1ee29b1e56d7161242fa1a408f9\transformed\ui-tooling-data-release\res
-com.example.savourit.app-ui-geometry-release-39 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\888c016e7cd2a8b717f93f5ef6359de2\transformed\ui-geometry-release\res
-com.example.savourit.app-ui-util-release-40 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\8bc8c329edef67d9cc4bff22f44b073a\transformed\ui-util-release\res
-com.example.savourit.app-lifecycle-livedata-2.8.7-41 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\8c051f41024f259d15deaa573a39fcaf\transformed\lifecycle-livedata-2.8.7\res
-com.example.savourit.app-ui-text-release-42 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\8f2eff555fe538e237b40ad2d0d4e840\transformed\ui-text-release\res
-com.example.savourit.app-savedstate-ktx-1.2.1-43 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\8f95b419d546e64b45f814860936bdb2\transformed\savedstate-ktx-1.2.1\res
-com.example.savourit.app-material3-release-44 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\95339b222c7611991eb2302ad76e0990\transformed\material3-release\res
-com.example.savourit.app-activity-ktx-1.10.0-45 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\9f061f44d886d09c121e19beeae5ad6e\transformed\activity-ktx-1.10.0\res
-com.example.savourit.app-core-runtime-2.2.0-46 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\a520a679df0d09a64a1fe1bb1b980111\transformed\core-runtime-2.2.0\res
-com.example.savourit.app-lifecycle-viewmodel-savedstate-2.8.7-47 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\a9de032a375528d9badbbaf457eb6abf\transformed\lifecycle-viewmodel-savedstate-2.8.7\res
-com.example.savourit.app-credentials-play-services-auth-1.2.0-rc01-48 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\ab8280be0845954ca692aed3c7eb51cb\transformed\credentials-play-services-auth-1.2.0-rc01\res
-com.example.savourit.app-emoji2-1.3.0-49 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\aecb7cdad70165ae980c6130c21b1b5d\transformed\emoji2-1.3.0\res
-com.example.savourit.app-foundation-release-50 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\b018874d64fbd36e2d0277e6279cc72b\transformed\foundation-release\res
-com.example.savourit.app-material-1.12.0-51 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\b61f7043d78d68b4f1fd223efa9eabcd\transformed\material-1.12.0\res
-com.example.savourit.app-window-1.0.0-52 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\b85027f9286e1c5d99c1c5b8bd07c609\transformed\window-1.0.0\res
-com.example.savourit.app-profileinstaller-1.4.0-53 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\b9c172c216416261adc16ebdc8422290\transformed\profileinstaller-1.4.0\res
-com.example.savourit.app-fragment-ktx-1.6.2-54 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\bab08f98777ecab0469f8a653ac65540\transformed\fragment-ktx-1.6.2\res
-com.example.savourit.app-lifecycle-service-2.8.7-55 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\bc92320f7712fb39b5a4abf37ed5a6e0\transformed\lifecycle-service-2.8.7\res
-com.example.savourit.app-material-ripple-release-56 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\bcddd34a55c66c83645fb7d862e7c817\transformed\material-ripple-release\res
-com.example.savourit.app-foundation-layout-release-57 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\bfeb4da601e5709a3b701b5ad4e9fa02\transformed\foundation-layout-release\res
-com.example.savourit.app-cardview-1.0.0-58 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\c25b6b3eda2c03b3321ba896caf4f224\transformed\cardview-1.0.0\res
-com.example.savourit.app-lifecycle-viewmodel-ktx-2.8.7-59 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\cc0e74892f9162ae6236ab3d4e60477e\transformed\lifecycle-viewmodel-ktx-2.8.7\res
-com.example.savourit.app-fragment-1.6.2-60 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\ccc42e3154430da7d96f3fad25f9cf28\transformed\fragment-1.6.2\res
-com.example.savourit.app-ui-unit-release-61 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\d0147758175bb829d729c2fc11a5f7fa\transformed\ui-unit-release\res
-com.example.savourit.app-animation-release-62 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\d0b24bc68af522e2e53c6d4bc3907489\transformed\animation-release\res
-com.example.savourit.app-play-services-base-18.5.0-63 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\d37eee4c7cc691d40dde44b9f0db63cf\transformed\play-services-base-18.5.0\res
-com.example.savourit.app-runtime-release-64 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\d4d0ad7f33375b5cdf636fe999492c23\transformed\runtime-release\res
-com.example.savourit.app-viewpager2-1.1.0-beta02-65 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\d6dceacf79ffb807f1546894cfad2e10\transformed\viewpager2-1.1.0-beta02\res
-com.example.savourit.app-activity-compose-1.10.0-66 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\e0f9d4cbc3cd4d84a904d40a5b20a0f4\transformed\activity-compose-1.10.0\res
-com.example.savourit.app-ui-test-manifest-1.6.6-67 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\e2b36601d5e1ad0b8df6c92327a5a26d\transformed\ui-test-manifest-1.6.6\res
-com.example.savourit.app-ui-tooling-preview-release-68 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\e56a846e19a5425ae1e3919c95052ad6\transformed\ui-tooling-preview-release\res
-com.example.savourit.app-credentials-1.2.0-rc01-69 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\e6abc733bf1aec34ac410ca1f951c5ec\transformed\credentials-1.2.0-rc01\res
-com.example.savourit.app-annotation-experimental-1.4.1-70 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\ea3043c3ab5ef986be2ad7cae2c9e783\transformed\annotation-experimental-1.4.1\res
-com.example.savourit.app-lifecycle-livedata-core-2.8.7-71 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\eca0b5139c38b7aeb823cc3d0c4264e7\transformed\lifecycle-livedata-core-2.8.7\res
-com.example.savourit.app-tracing-1.2.0-72 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\f3d151ff005c2335e46772c2c3f23ab5\transformed\tracing-1.2.0\res
-com.example.savourit.app-databinding-adapters-8.8.2-73 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\f638fb7226806ddc2f02c06725028624\transformed\databinding-adapters-8.8.2\res
-com.example.savourit.app-lifecycle-viewmodel-release-74 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\fbb586489b27c686aeb533929f0f42f9\transformed\lifecycle-viewmodel-release\res
-com.example.savourit.app-pngs-75 C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\build\generated\res\pngs\debug
-com.example.savourit.app-res-76 C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\build\generated\res\processDebugGoogleServices
-com.example.savourit.app-resValues-77 C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\build\generated\res\resValues\debug
-com.example.savourit.app-packageDebugResources-78 C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.savourit.app-packageDebugResources-79 C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.savourit.app-debug-80 C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.example.savourit.app-debug-81 C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\debug\res
-com.example.savourit.app-main-82 C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\res
+com.example.savourit.app-emoji-google-0.8.0-26 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\5ce417abd518cbe49d6e12c90970d200\transformed\emoji-google-0.8.0\res
+com.example.savourit.app-ui-release-27 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\5de17760f07ed3a8441543b07de55a2b\transformed\ui-release\res
+com.example.savourit.app-savedstate-1.2.1-28 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\6a696c1a6f56c8d29c496421c3d94209\transformed\savedstate-1.2.1\res
+com.example.savourit.app-runtime-saveable-release-29 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\6d000f02c6155fdaffa42b6fc4a414f4\transformed\runtime-saveable-release\res
+com.example.savourit.app-firebase-common-21.0.0-30 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\6d1fef8d9ad118115b2498184f8c384e\transformed\firebase-common-21.0.0\res
+com.example.savourit.app-lifecycle-runtime-release-31 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\72140c9308532ba456103ea3dbc29ff3\transformed\lifecycle-runtime-release\res
+com.example.savourit.app-navigation-ui-2.8.8-32 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\75c1b0090d5fd30829f2f8e6ee7692c8\transformed\navigation-ui-2.8.8\res
+com.example.savourit.app-navigation-fragment-2.8.8-33 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\77fd53296734dbcc71f891ba98e2f32d\transformed\navigation-fragment-2.8.8\res
+com.example.savourit.app-lifecycle-livedata-core-ktx-2.8.7-34 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\7d14bcfc601c94c20e7be30ae1e9039f\transformed\lifecycle-livedata-core-ktx-2.8.7\res
+com.example.savourit.app-ui-tooling-release-35 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\7f7ca984bf22bc3a68921d64167c56ea\transformed\ui-tooling-release\res
+com.example.savourit.app-animation-core-release-36 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\807f64429fc287b56d5a050e445e0bc0\transformed\animation-core-release\res
+com.example.savourit.app-material-icons-core-release-37 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\810270224795fbb1954b7655df190c7e\transformed\material-icons-core-release\res
+com.example.savourit.app-core-ktx-1.15.0-38 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\85748cbc31495aabdeaac3b80c03d51f\transformed\core-ktx-1.15.0\res
+com.example.savourit.app-ui-tooling-data-release-39 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\8822e1ee29b1e56d7161242fa1a408f9\transformed\ui-tooling-data-release\res
+com.example.savourit.app-ui-geometry-release-40 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\888c016e7cd2a8b717f93f5ef6359de2\transformed\ui-geometry-release\res
+com.example.savourit.app-ui-util-release-41 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\8bc8c329edef67d9cc4bff22f44b073a\transformed\ui-util-release\res
+com.example.savourit.app-lifecycle-livedata-2.8.7-42 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\8c051f41024f259d15deaa573a39fcaf\transformed\lifecycle-livedata-2.8.7\res
+com.example.savourit.app-ui-text-release-43 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\8f2eff555fe538e237b40ad2d0d4e840\transformed\ui-text-release\res
+com.example.savourit.app-savedstate-ktx-1.2.1-44 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\8f95b419d546e64b45f814860936bdb2\transformed\savedstate-ktx-1.2.1\res
+com.example.savourit.app-material3-release-45 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\95339b222c7611991eb2302ad76e0990\transformed\material3-release\res
+com.example.savourit.app-activity-ktx-1.10.0-46 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\9f061f44d886d09c121e19beeae5ad6e\transformed\activity-ktx-1.10.0\res
+com.example.savourit.app-core-runtime-2.2.0-47 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\a520a679df0d09a64a1fe1bb1b980111\transformed\core-runtime-2.2.0\res
+com.example.savourit.app-lifecycle-viewmodel-savedstate-2.8.7-48 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\a9de032a375528d9badbbaf457eb6abf\transformed\lifecycle-viewmodel-savedstate-2.8.7\res
+com.example.savourit.app-credentials-play-services-auth-1.2.0-rc01-49 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\ab8280be0845954ca692aed3c7eb51cb\transformed\credentials-play-services-auth-1.2.0-rc01\res
+com.example.savourit.app-emoji2-1.3.0-50 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\aecb7cdad70165ae980c6130c21b1b5d\transformed\emoji2-1.3.0\res
+com.example.savourit.app-foundation-release-51 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\b018874d64fbd36e2d0277e6279cc72b\transformed\foundation-release\res
+com.example.savourit.app-material-1.12.0-52 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\b61f7043d78d68b4f1fd223efa9eabcd\transformed\material-1.12.0\res
+com.example.savourit.app-window-1.0.0-53 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\b85027f9286e1c5d99c1c5b8bd07c609\transformed\window-1.0.0\res
+com.example.savourit.app-profileinstaller-1.4.0-54 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\b9c172c216416261adc16ebdc8422290\transformed\profileinstaller-1.4.0\res
+com.example.savourit.app-fragment-ktx-1.6.2-55 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\bab08f98777ecab0469f8a653ac65540\transformed\fragment-ktx-1.6.2\res
+com.example.savourit.app-lifecycle-service-2.8.7-56 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\bc92320f7712fb39b5a4abf37ed5a6e0\transformed\lifecycle-service-2.8.7\res
+com.example.savourit.app-material-ripple-release-57 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\bcddd34a55c66c83645fb7d862e7c817\transformed\material-ripple-release\res
+com.example.savourit.app-foundation-layout-release-58 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\bfeb4da601e5709a3b701b5ad4e9fa02\transformed\foundation-layout-release\res
+com.example.savourit.app-cardview-1.0.0-59 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\c25b6b3eda2c03b3321ba896caf4f224\transformed\cardview-1.0.0\res
+com.example.savourit.app-lifecycle-viewmodel-ktx-2.8.7-60 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\cc0e74892f9162ae6236ab3d4e60477e\transformed\lifecycle-viewmodel-ktx-2.8.7\res
+com.example.savourit.app-fragment-1.6.2-61 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\ccc42e3154430da7d96f3fad25f9cf28\transformed\fragment-1.6.2\res
+com.example.savourit.app-ui-unit-release-62 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\d0147758175bb829d729c2fc11a5f7fa\transformed\ui-unit-release\res
+com.example.savourit.app-animation-release-63 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\d0b24bc68af522e2e53c6d4bc3907489\transformed\animation-release\res
+com.example.savourit.app-play-services-base-18.5.0-64 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\d37eee4c7cc691d40dde44b9f0db63cf\transformed\play-services-base-18.5.0\res
+com.example.savourit.app-runtime-release-65 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\d4d0ad7f33375b5cdf636fe999492c23\transformed\runtime-release\res
+com.example.savourit.app-emoji-0.8.0-66 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\d5a5fd65a7f8c1a9e6d0ea1eebc7c60c\transformed\emoji-0.8.0\res
+com.example.savourit.app-viewpager2-1.1.0-beta02-67 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\d6dceacf79ffb807f1546894cfad2e10\transformed\viewpager2-1.1.0-beta02\res
+com.example.savourit.app-activity-compose-1.10.0-68 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\e0f9d4cbc3cd4d84a904d40a5b20a0f4\transformed\activity-compose-1.10.0\res
+com.example.savourit.app-ui-test-manifest-1.6.6-69 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\e2b36601d5e1ad0b8df6c92327a5a26d\transformed\ui-test-manifest-1.6.6\res
+com.example.savourit.app-ui-tooling-preview-release-70 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\e56a846e19a5425ae1e3919c95052ad6\transformed\ui-tooling-preview-release\res
+com.example.savourit.app-credentials-1.2.0-rc01-71 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\e6abc733bf1aec34ac410ca1f951c5ec\transformed\credentials-1.2.0-rc01\res
+com.example.savourit.app-annotation-experimental-1.4.1-72 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\ea3043c3ab5ef986be2ad7cae2c9e783\transformed\annotation-experimental-1.4.1\res
+com.example.savourit.app-lifecycle-livedata-core-2.8.7-73 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\eca0b5139c38b7aeb823cc3d0c4264e7\transformed\lifecycle-livedata-core-2.8.7\res
+com.example.savourit.app-tracing-1.2.0-74 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\f3d151ff005c2335e46772c2c3f23ab5\transformed\tracing-1.2.0\res
+com.example.savourit.app-databinding-adapters-8.8.2-75 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\f638fb7226806ddc2f02c06725028624\transformed\databinding-adapters-8.8.2\res
+com.example.savourit.app-lifecycle-viewmodel-release-76 C:\Users\lenovo\.gradle\caches\8.10.2\transforms\fbb586489b27c686aeb533929f0f42f9\transformed\lifecycle-viewmodel-release\res
+com.example.savourit.app-pngs-77 C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\build\generated\res\pngs\debug
+com.example.savourit.app-res-78 C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\build\generated\res\processDebugGoogleServices
+com.example.savourit.app-resValues-79 C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\build\generated\res\resValues\debug
+com.example.savourit.app-packageDebugResources-80 C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.savourit.app-packageDebugResources-81 C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.savourit.app-debug-82 C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.savourit.app-debug-83 C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\debug\res
+com.example.savourit.app-main-84 C:\Users\lenovo\OneDrive\Year2 Team Project\TeamE1\app\src\main\res
