@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/info_window_bg">
+
+    <ImageView
+        android:id="@+id/info_Image"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" /> <!-- Optional: only show if image present -->
+
+    <TextView
+        android:id="@+id/info_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="4dp" />
+</LinearLayout>
