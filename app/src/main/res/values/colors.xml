@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lavender">#8c67b1</color>
+    <color name="colorNormalTextColor">#575F6B</color>
+    <color name="colorHintTextColor">#A1A2A9</color>
+    <color name="colorTextColorHint">#8F434343</color>
+    <color name="colorTextColor">#434343</color>
+    <color name="colorErrorTextColorNew">#E12828</color>
+    <color name="grey">#ff424242</color>
+    <color name="red">#FF0000</color>
+
+    <!-- Primary Orange Colors -->
+    <color name="orange">#FFA726</color>  <!-- Light Orange -->
+    <color name="dark_orange">#FB8C00</color>  <!-- Darker Orange -->
+
+    <!-- Background Color -->
+    <color name="background_color">#F7F6F2</color>  <!-- Light Beige Background -->
+
+    <!-- Custom colors for the SwitchCompat track -->
+    <color name="your_checked_track_color">@color/orange</color> <!-- Blue for checked track -->
+    <color name="your_unchecked_track_color">#BDBDBD</color> <!-- Darker gray for unchecked track -->
+
+    <!-- Custom colors for the SwitchCompat thumb -->
+    <color name="your_checked_thumb_color">#ffffff</color> <!-- Yellow for checked thumb -->
+    <color name="your_unchecked_thumb_color">#ffffff</color> <!-- Red for unchecked thumb -->
+</resources>

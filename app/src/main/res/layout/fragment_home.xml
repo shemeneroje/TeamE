@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Google Map Fullscreen -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Autocomplete Search and Filter (Top Layer) -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_gravity="top">
+
+        <FrameLayout
+            android:id="@+id/searchBarContainer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/custom_edittext"
+            android:elevation="6dp"
+            android:layout_gravity="top">
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/autocomplete_fragment"
+                android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+
+            <!-- Filter Icon inside the box (aligned right) -->
+            <ImageView
+                android:id="@+id/filterIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center|end"
+                android:layout_marginEnd="8dp"
+                android:padding="6dp"
+                android:src="@drawable/ic_filter"
+                android:contentDescription="@string/filter_icon"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+        </FrameLayout>
+        <ImageView
+            android:id="@+id/btnMyLocation"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/searchBarContainer"
+            android:layout_alignEnd="@id/searchBarContainer"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_my_location"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="My Location"
+            android:padding="10dp" />
+        <Button
+            android:id="@+id/stopRoute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop Route"
+            android:layout_below="@id/btnMyLocation"
+            android:layout_alignEnd="@id/btnMyLocation"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:minWidth="120dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/dark_orange"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/floatingRestaurantList"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_gravity="bottom"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:background="@drawable/fade_top_overlay"
+        android:overScrollMode="never" />
+    <ProgressBar
+        android:id="@+id/mapLoadingIndicator"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/dark_orange"
+        style="?android:attr/progressBarStyleLarge" />
+</FrameLayout>
